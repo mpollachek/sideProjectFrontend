@@ -1,0 +1,28 @@
+.lrmargin10 {
+  margin-left: 10%;
+  margin-right: 10%;  
+}
+
+.lrmargin {
+  margin-left: 4%;
+  margin-right: 4%;  
+}
+
+.bannerusred {
+  outline: 3px solid black;
+  background-color: rgb(250, 105, 105);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.bggrnus {
+  background-color: rgba(74, 120, 49, 0.5);
+}
+
+.bgorngeus {
+  background-color: rgb(204, 158, 33)
+}

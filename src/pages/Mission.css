@@ -1,0 +1,26 @@
+.lrmargin10 {
+  margin-left: 10%;
+  margin-right: 10%;  
+}
+
+.bggrn {
+  background-color: rgba(74, 120, 49, 0.5);
+}
+
+.bgLornge {
+  background-color: rgb(246, 198, 66);
+  color: #000;
+}
+
+.lrmargin3 {
+  margin-left: 3%;
+  margin-right: 3%;  
+}
+
+.definition {
+  max-height: 300px;
+}
+
+.hand:hover {
+  cursor: pointer;
+}

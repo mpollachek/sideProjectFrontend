@@ -1,0 +1,11 @@
+.bannerDonate {
+  outline: 3px solid black;
+  background-color: rgb(232, 110, 10);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+

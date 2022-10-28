@@ -1,0 +1,27 @@
+.navbar-dark {
+  background-image: linear-gradient(to right, #004cff, #ffffff, #ff0000);
+  margin-bottom: 2rem;
+  min-height: 8rem;
+}
+
+.navicons {
+    font-size: 1.5em !important;
+    vertical-align: top !important;
+    color: rgb(0, 0, 0);
+    opacity: 75%;
+  }
+
+.navfont {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+
+
+.brand {
+    width: 100%;
+    height: 100%;
+    max-width: 6em;
+    
+}
