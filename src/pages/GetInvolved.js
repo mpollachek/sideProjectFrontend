@@ -15,11 +15,12 @@ import { Link } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import uprising from '../assets/daumier-the-uprising-1860.jpg';
 import Axios from "axios";
+import backend from '../config';
 
 
 const GetInvolved = () => {
 
-  const backend = process.env.backendString;
+  //const backend = process.env.backendString;
 
   const handleSubmit = (values) => {
     console.log('form values: ', values);
@@ -34,6 +35,7 @@ const GetInvolved = () => {
     const interval = setInterval( async () => {
       await Axios.get(`${backend}/getEmails`).then((response) => {
       setCount(response.data);
+      console.log(response);
     });
     }, 2000);    
   });
@@ -42,8 +44,8 @@ const GetInvolved = () => {
     await Axios.post(`${backend}/addEmail`, {
       values
     }).then((response) => {
-      console.log("post: " + JSON.stringify(values) );
-      console.log("Email added: " + JSON.stringify(response))
+      console.log("post: " + values );
+      console.log("Email added: " + response)
     });
   }
 
