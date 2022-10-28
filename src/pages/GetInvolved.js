@@ -31,15 +31,15 @@ const GetInvolved = () => {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      Axios.get(`${backend}/getEmails`).then((response) => {
+    const interval = setInterval( async () => {
+      await Axios.get(`${backend}/getEmails`).then((response) => {
       setCount(response.data);
     });
     }, 2000);    
   });
 
-  const addEmail = (values) => {
-    Axios.post(`${backend}/addEmail`, {
+  const addEmail = async (values) => {
+    await Axios.post(`${backend}/addEmail`, {
       values
     }).then((response) => {
       console.log("post: " + JSON.stringify(values) );
