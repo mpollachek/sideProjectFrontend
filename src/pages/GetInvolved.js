@@ -19,6 +19,8 @@ import Axios from "axios";
 
 const GetInvolved = () => {
 
+  const backend = process.env.backendString;
+
   const handleSubmit = (values) => {
     console.log('form values: ', values);
     console.log('in JSON format: ', JSON.stringify(values));
@@ -30,14 +32,14 @@ const GetInvolved = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      Axios.get("http://localhost:3001/getEmails").then((response) => {
+      Axios.get(`${backend}/getEmails`).then((response) => {
       setCount(response.data);
     });
     }, 2000);    
   });
 
   const addEmail = (values) => {
-    Axios.post("http://localhost:3001/addEmail", {
+    Axios.post(`${backend}/addEmail`, {
       values
     }).then((response) => {
       console.log("post: " + JSON.stringify(values) );
