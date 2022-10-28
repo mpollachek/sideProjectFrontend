@@ -15,12 +15,12 @@ import { Link } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import uprising from '../assets/daumier-the-uprising-1860.jpg';
 import Axios from "axios";
-import backend from '../config';
+//import backend from '../config';
 
 
 const GetInvolved = () => {
 
-  //const backend = process.env.backendString;
+  const backend = process.env.backendString;
 
   const handleSubmit = (values) => {
     console.log('form values: ', values);
