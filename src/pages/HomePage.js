@@ -34,7 +34,7 @@ const HomePage = () => {
   
   return(
     
-    <Container className="container-bg full-width">
+    <Container className="container-bg full-width" style={{color: 'black'}} >
       <h1 className='display-3 text-center'>All Workers Union</h1>
       <Row className='banner1 text-center'>
         <h1><Link to='/GetInvolved'>Join Our Movement</Link></h1>
@@ -195,7 +195,7 @@ const HomePage = () => {
       </Row>
 
       <Row className='my-3'>
-      <Col className='text-center'
+      <Col className='text-center align-middle' style={{height: "100%"}}
       lg={{
         offset: 1,
         size: 5
