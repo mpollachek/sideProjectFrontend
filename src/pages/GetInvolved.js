@@ -15,12 +15,16 @@ import { Link } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import uprising from '../assets/daumier-the-uprising-1860.jpg';
 import Axios from "axios";
-//import backend from '../config';
+import { u, p } from '../config';
+import { Buffer } from 'buffer';
 
 
 const GetInvolved = () => {
 
-  const backend = process.env.backendString;
+  //const u = process.env.cyclicUser;
+  //const p = process.env.cyclicPword;
+
+  window.Buffer = Buffer;
 
   const handleSubmit = (values) => {
     console.log('form values: ', values);
@@ -33,16 +37,23 @@ const GetInvolved = () => {
 
   useEffect(() => {
     const interval = setInterval( async () => {
-      await Axios.get(`${backend}/getEmails`).then((response) => {
+      await Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
+      headers: {
+        'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString('base64')}`
+      }
+      
+      }).then((response) => {
       setCount(response.data);
-      console.log(`sent to: ${backend}`);
-      console.log(response.data)
+      console.log(response.data);
     });
     }, 2000);    
   });
 
   const addEmail = async (values) => {
-    await Axios.post(`${backend}/addEmail`, {
+    await Axios.post(`https://sore-pink-cow-sari.cyclic.app/api/addEmail`, {
+      headers: {
+        'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString('base64')}`
+      },
       values
     }).then((response) => {
       console.log("post: " + JSON.stringify(values) );
