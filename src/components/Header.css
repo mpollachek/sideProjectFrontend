@@ -1,7 +1,8 @@
 .navbar-dark {
   background-image: linear-gradient(to right, #004cff, #ffffff, #ff0000);
-  margin-bottom: 2rem;
   min-height: 8rem;
+  margin: 0 !important;
+  width: 100% !important;
 }
 
 .navicons {

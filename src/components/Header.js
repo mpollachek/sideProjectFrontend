@@ -5,7 +5,8 @@ import {
     Collapse,
     NavbarToggler,
     Nav,
-    NavItem
+    NavItem,
+    Container
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import AWUlogo from '../assets/logo1.png';
@@ -21,7 +22,7 @@ import Faq from '../pages/Faq';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return(
-    <Navbar dark sticky='top' expand='md' style={{marginBottom: "0"}}>
+    <Navbar dark sticky='top' expand='md' >
       <NavbarBrand className='ms-5' href='/'>
         <img src={AWUlogo} alt='All Workers Union Logo' 
         className='float-start brand'/>
