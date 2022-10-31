@@ -15,14 +15,14 @@ import { Link } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import uprising from '../assets/daumier-the-uprising-1860.jpg';
 import Axios from "axios";
-import { u, p } from '../config';
+//import { u, p } from '../config';
 import { Buffer } from 'buffer';
 
 
 const GetInvolved = () => {
 
-  //const u = process.env.cyclicUser;
-  //const p = process.env.cyclicPword;
+  const u = process.env.cyclicUser;
+  const p = process.env.cyclicPword;
 
   window.Buffer = Buffer;
 
@@ -49,7 +49,7 @@ const GetInvolved = () => {
       setCount(response.data);
       console.log(response.data);
     });
-    }, 2000);    
+    }, 600000);    
   });
 
   const addEmail = async (values) => {
