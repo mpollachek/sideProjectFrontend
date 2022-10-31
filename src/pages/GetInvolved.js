@@ -15,16 +15,18 @@ import { Link } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import uprising from '../assets/daumier-the-uprising-1860.jpg';
 import Axios from "axios";
-//import { u, p } from '../config';
+import { u, p } from '../config';
 import { Buffer } from 'buffer';
 
 
 const GetInvolved = () => {
 
-  const u = process.env.cyclicUser;
-  const p = process.env.cyclicPword;
+  //const u = process.env.cyclicUser;
+  //const p = process.env.cyclicPword;
 
   window.Buffer = Buffer;
+
+  const encAuth = Buffer.from(`${u}:${p}`).toString('base64');
 
   const handleSubmit = (values) => {
     console.log('form values: ', values);
@@ -38,10 +40,11 @@ const GetInvolved = () => {
   useEffect(() => {
     const interval = setInterval( async () => {
       await Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
+        
       headers: {
-        'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString('base64')}`
-      }
-      
+        'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
+      },
+      withCredentials: false,      
       }).then((response) => {
       setCount(response.data);
       console.log(response.data);

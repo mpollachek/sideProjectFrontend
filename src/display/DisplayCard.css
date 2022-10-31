@@ -3,3 +3,12 @@
   margin-right: 5%;
   color: #000;
 }
+
+.cards {
+  z-index: 0;
+  position: relative;
+}
+
+.cards:hover {
+  z-index: 1;
+}

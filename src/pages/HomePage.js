@@ -20,6 +20,7 @@ import hand from '../assets/the_hand_that_will_rule_the_world.jpg';
 import CBOchart1 from '../assets/CBO_wealth_chart_1.png';
 import CBOchart2 from '../assets/wealth_increase_distribution.png'
 import profits from '../assets/profits_vs_labor_costs_EPI.png';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   const [toggle, setToggle] = useState(false);
@@ -35,43 +36,67 @@ const HomePage = () => {
   return(
     
     <Container className="container-bg full-width" style={{color: 'black'}} >
-      <h1 className='display-3 text-center'>All Workers Union</h1>
+      <Row className='py-4'>
+      <motion.div
+      animate={{ scale: [0, 1.5, 1], times: [null, .7, 1 ]}}
+      transition={{ delay: 2, duration: 2}}
+      >
+      <h1 className='display-1 text-center lead'>All Workers Union</h1>
+      </motion.div>
+      </Row>
+      <motion.div
+      animate={{ y: [-500, -150, 0, -75, 0, -25, 0], times: [null, .7, .8, .87, .94, .97, 1] }}
+      transition={{ delay: 1, duration: 1.5, type: "spring" }}
+      >
       <Row className='banner1 text-center'>
         <h1><Link to='/GetInvolved'>Join Our Movement</Link></h1>
         <h3>We Are Organizing a <b>Million Man Strike</b> to Negotiate with the Government</h3>
         <h3>Together we have the Power to Demand Fair Compensation for our Labor</h3>
       </Row>
+      </motion.div>
 
       {/* change image to a column so that text can be vertically aligned */}
       <animated.div style={animatedStyle}>
       <Row className='firstImage justify-content-center mt-3'>
       {/* <img src={statue} alt='Statue of Workers' style={{maxWidth: '100%'}}/> */}
+      
       <Col className='imageText my-auto'>
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 4 }}
+      >
         <h1 className='display-4 imageTextProps1'>We Are Not Left<span className='imageTextProps2'>We Are Not Right</span></h1> 
+        </motion.div>
       </Col>
+      
       </Row>
       </animated.div>
 
       {/* Beneath primary Banner */}
+      <Row>
         <h1 className='display-4 text-center'>We Fight for the Benefit of All Workers</h1>
         <h2 className='text-center'>Politicians and the Media are Working to Divide Us </h2>
         <h2 className='text-center'>They want the Left and Right at War so that Nobody Looks Up
         </h2>
         <h3 className='text-center'>Greed and a lack of empathy should not be rewarded characteristics in an ethical society
         </h3>
+      </Row>
 
       <Row className='banner2 text-center mt-4'>
         <h1>Our Solutions</h1>
       </Row>
       <Row className='mt-5 lrmargin'>
-        <Col md={4}>
+        <Col md={4} className='order-last order-md-first'>
           <img className='mb-5' href='/' src={FDR} style={{maxWidth: '100%'}} alt='FDR Quote' />
           <img className='mb-5' href='/' src={hand} style={{maxWidth: '100%'}} alt='the hand that will rule the world' />
         </Col>
 
         {/* Accordian */}
         <Col className='solutions justify-content-end ms-2'>
-  <UncontrolledAccordion defaultOpen="1" style={{whiteSpace: 'pre-wrap'}}>
+  <UncontrolledAccordion defaultOpen="1" style={{whiteSpace: 'pre-wrap'}} 
+  className='order-first order-md-last'
+  >
   <AccordionItem>
     <AccordionHeader targetId="1">
       Balanced Wage Ratio for Employees

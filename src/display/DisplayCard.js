@@ -13,28 +13,39 @@ import {
 } from 'reactstrap';
 import {useState} from 'react';
 import { useSpring, animated } from 'react-spring';
+import { motion } from "framer-motion";
+import "./DisplayCard.css";
+import zIndex from '@mui/material/styles/zIndex';
 
 const DisplayCard = ({title, subtitle, image, text, alt, link, linksource, linkname}) => {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
 
     const [state, toggleState] = useState( false )
-    const { x } = useSpring({
-      from: { x: 0 },
-      x: state ? 1 : 0,
-      config: { duration: 500 },
-    })
+    // const { x } = useSpring({
+    //   from: { x: 0 },
+    //   x: state ? 1 : 0,
+    //   config: { duration: 500 },
+    // })
 
     return (      
-      <Container>
-      <Row className='text-center lrmargin hand' onClick={toggle} onMouseOver={() => toggleState(!state)} >
+      <Container className='cards'>
+        <motion.div
+          whileHover={{ 
+            scale: [null, 1.2, 1.1 ],
+          }}
+          transition={{ duration: 0.6 }}
+          onClick={toggle}
+        >
+        <Row className='text-center lrmargin hand'>
+      {/* <Row className='text-center lrmargin hand' onClick={toggle} onMouseOver={() => toggleState(!state)} >
         <animated.div
         style={{
           scale: x.to({
             range: [0, 0.25, 0.5, 0.75, 1],
             output: [1, 0.97, 1.03, 0.95, 1],
           })
-        }}>
+        }}> */}
         <Col>
           <Card>
             <img
@@ -55,8 +66,9 @@ const DisplayCard = ({title, subtitle, image, text, alt, link, linksource, linkn
             </CardBody>
           </Card>
         </Col>
-        </animated.div>
-      </Row>    
+        {/* </animated.div> */}
+      </Row> 
+      </motion.div>   
       
       <Modal isOpen={modal} toggle={toggle} size='xl' centered={true}>
         <Row className='text-center lrmargin'>
