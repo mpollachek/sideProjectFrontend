@@ -1,7 +1,6 @@
 .lrmargin {
   margin-left: 5%;
   margin-right: 5%;
-  color: #000;
 }
 
 .cards {
@@ -11,4 +10,8 @@
 
 .cards:hover {
   z-index: 1;
+}
+
+.textBlack {
+  color: #000;
 }

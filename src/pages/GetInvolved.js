@@ -68,9 +68,11 @@ const GetInvolved = () => {
 
   return (
     <Container className="full-width">
+      <Row>
       <h2 className='text-center mt-4 lrmargin'>Together, We will Create a Labor Strike that Will Force Corporations and the Government to Improve our Working Conditions and Compensation</h2>
       <h2 className='text-center'><em>Please <b>Spread the Word</b> about the All Workers Union!</em></h2>
       <h4 className='text-center my-3 lrmargin'>Whether you Wish to Improve Working Conditions for yourself, your Friends, your Family or you Simply Want your Fellow Countrymen to have an Improved Quality of Life, Please Join our Movement.</h4>
+      </Row>
       <Row className='banner1 text-center lrmargin10'>
       <h3 className='my-2'>Our Goal is to have 1 Million Workers Pledged to Strike</h3>
       <h3 className='mb-2'>Enter Your Email Address below to pledge to be part of the All Workers Union Strike</h3>

@@ -37,7 +37,7 @@ const DisplayCard = ({title, subtitle, image, text, alt, link, linksource, linkn
           transition={{ duration: 0.6 }}
           onClick={toggle}
         >
-        <Row className='text-center lrmargin hand'>
+        <Row className='text-center lrmargin hand textBlack'>
       {/* <Row className='text-center lrmargin hand' onClick={toggle} onMouseOver={() => toggleState(!state)} >
         <animated.div
         style={{
@@ -71,7 +71,7 @@ const DisplayCard = ({title, subtitle, image, text, alt, link, linksource, linkn
       </motion.div>   
       
       <Modal isOpen={modal} toggle={toggle} size='xl' centered={true}>
-        <Row className='text-center lrmargin'>
+        <Row className='text-center lrmargin textBlack'>
         <Col>
           <Card>
             <img
