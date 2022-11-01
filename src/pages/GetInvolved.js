@@ -41,10 +41,13 @@ const GetInvolved = () => {
   useEffect(() => {
     const interval = setInterval( async () => {
       await Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
-        
-      headers: {
-        'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
-      },
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      // headers: {
+      //   'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
+      // },
+      // once login resolved, change credentials
       withCredentials: false,      
       }).then((response) => {
       setCount(response.data);
@@ -127,7 +130,7 @@ const GetInvolved = () => {
       </Row>
       <Row>
         <Col className='mt-4 text-center'>
-        <h2>If you believe your purpose in life is not to make a billionaire more money</h2>
+        <h2>If you believe there is more purpose in life than making billionaires more money</h2>
         <h1>Join Our Movement!</h1>
         </Col>
       </Row>

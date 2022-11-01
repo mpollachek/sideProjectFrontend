@@ -20,7 +20,7 @@ import hand from '../assets/the_hand_that_will_rule_the_world.jpg';
 import CBOchart1 from '../assets/CBO_wealth_chart_1.png';
 import CBOchart2 from '../assets/wealth_increase_distribution.png'
 import profits from '../assets/profits_vs_labor_costs_EPI.png';
-import { motion } from 'framer-motion';
+import { motion, } from 'framer-motion';
 
 const HomePage = () => {
   const [toggle, setToggle] = useState(false);
@@ -32,21 +32,65 @@ const HomePage = () => {
   useEffect(() => {
     setToggle(true);
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
+  const springDown = {
+    init: { y: -500 },
+    animate: {y: [-500, 0, -75, 0, -25, 0], times: [null, .7, .8, .9, .95, 1] ,
+    transition: { delay: .75, duration: 2, type: "spring" } },
+    viewport: { once: true }
+  };
+  const pullUp = {
+    hidden: { y: "200px", opacity: 0 },
+    visible: { y: "0", opacity: 1, transition: { delay: .5, duration: 1 } },
+    viewport: { once: true }
+  };
+  const pullLeft = {
+    hidden: { x: "60vw", opacity: 0 },
+    visible: { x: "0", opacity: 1, transition: { delay: 1, duration: 1 } },
+    viewport: { once: true }
+  };
+  const pullRight = {
+    hidden: { x: "-60vw", opacity: 0 },
+    visible: { x: "0", opacity: 1, transition: { delay: .75, duration: 1 } },
+    viewport: { once: true }
+  };
+  const pullTowards = {
+    init: { scale: 0, opacity: 0 },
+    animate: { scale: [0, 1.5, 1], times: [null, .7, 1 ],
+    opacity: 1, transition: { delay: 1.25, duration: 2 }},
+    viewport: { once: true }
+  };
+  const pullAway = {
+    init: { scale: 0, opacity: 0 },
+    animate: { scale: [0, 10, .4, 1], times: [null, .01, .7, 1 ],
+    opacity: 1, transition: { delay: 1.25, duration: 2 }},
+    viewport: { once: true }
+  };
   
   return(
     
-    <Container className="container-bg full-width" style={{color: 'black'}} >
+    <Container className="container-bg full-width" style={{color: 'black', overflowX: 'hidden' }} >
       <Row className='py-4'>
       <motion.div
-      animate={{ scale: [0, 1.5, 1], times: [null, .7, 1 ]}}
-      transition={{ delay: 2, duration: 2}}
+      variants={pullTowards}
+      animate="animate"
+      initial="init"
+      // animate={{ scale: [0, 1.5, 1], times: [null, .7, 1 ]}}
+      // transition={{ delay: 2, duration: 2}}
       >
       <h1 className='display-1 text-center lead'>All Workers Union</h1>
       </motion.div>
       </Row>
       <motion.div
-      animate={{ y: [-500, -150, 0, -75, 0, -25, 0], times: [null, .7, .8, .87, .94, .97, 1] }}
-      transition={{ delay: 1, duration: 1.5, type: "spring" }}
+      variants={springDown}
+      animate="animate"
+      initial="init"
+      // animate={{ y: [-500, 0, -75, 0, -25, 0], times: [null, .8, .87, .94, .97, 1] }}
+      // transition={{ delay: 1, duration: 1.5, type: "spring" }}
       >
       <Row className='banner1 text-center'>
         <h1><Link to='/GetInvolved'>Join Our Movement</Link></h1>
@@ -63,8 +107,9 @@ const HomePage = () => {
       <Col className='imageText my-auto'>
       <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1, duration: 4 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 5 }}
+      viewport={{ once: true }}
       >
         <h1 className='display-4 imageTextProps1'>We Are Not Left<span className='imageTextProps2'>We Are Not Right</span></h1> 
         </motion.div>
@@ -75,25 +120,74 @@ const HomePage = () => {
 
       {/* Beneath primary Banner */}
       <Row>
+        <motion.div
+        variants={pullUp}
+        initial="hidden"
+        whileInView='visible'
+        >
         <h1 className='display-4 text-center'>We Fight for the Benefit of All Workers</h1>
+        </motion.div>
+        <motion.div
+        variants={pullRight}
+        initial="hidden"
+        whileInView='visible'
+        >
         <h2 className='text-center'>Politicians and the Media are Working to Divide Us </h2>
+        </motion.div>
+        <motion.div
+        variants={pullLeft}
+        initial="hidden"
+        whileInView='visible'
+        >
         <h2 className='text-center'>They want the Left and Right at War so that Nobody Looks Up
         </h2>
+        </motion.div>
+        <motion.div
+        whileInView={{ scale: [0, 0, 1.5, 1], times: [null, 0.01, .7, 1 ], opacity: [0, 0, .7, 1]}}
+        transition={{ delay: 1.5, duration: 2}}
+        >
         <h3 className='text-center'>Greed and a lack of empathy should not be rewarded characteristics in an ethical society
         </h3>
+        </motion.div>
       </Row>
 
-      <Row className='banner2 text-center mt-4'>
+      <motion.div
+      variants={pullAway}
+      whileInView="animate"
+      initial="init"
+      >
+      <Row className='banner2 text-center mt-4'>      
         <h1>Our Solutions</h1>
       </Row>
+      </motion.div>
       <Row className='mt-5 lrmargin'>
         <Col md={4} className='order-last order-md-first'>
+        <motion.div
+      whileInView={{ y: [0, -200, 0, -75, 0, -25, 0], times: [null, .01, .8, .87, .94, .97, 1], opacity: [0, 0, .5, .75, .9, .95, 1] }}
+      transition={{ delay: 1, duration: 1.5, type: "spring" }}
+      viewport={{ once: true }}
+      >
           <img className='mb-5' href='/' src={FDR} style={{maxWidth: '100%'}} alt='FDR Quote' />
+        </motion.div>
+        <motion.div
+          whileInView={{ x: [0, -200, 0], opacity: [0, 0, 1], times: [0, .01, 1] }}
+          transition={{ delay: .5, duration: 1.5, bounce: 0.1 }}
+          viewport={{ once: true }}
+        // hidden: { x: "-60vw", opacity: 0 },
+        // visible: { x: "0", opacity: 1, transition: { delay: .75, duration: 1 } },
+        // viewport: { once: true }
+        >
           <img className='mb-5' href='/' src={hand} style={{maxWidth: '100%'}} alt='the hand that will rule the world' />
+          </motion.div>  
         </Col>
 
         {/* Accordian */}
         <Col className='solutions justify-content-end ms-2'>
+        <motion.div
+        variants={pullLeft}
+        initial="hidden"
+        whileInView='visible'
+        >
   <UncontrolledAccordion defaultOpen="1" style={{whiteSpace: 'pre-wrap'}} 
   className='order-first order-md-last'
   >
@@ -214,29 +308,43 @@ const HomePage = () => {
       {' '}With lifetime healthcare plans better than any working class American and inflated salaries putting them in the top 10% of income earners, it is no wonder our politicians are so out of touch with the struggles of the American public. To understand us, they must live like us and experience the same hardships we do. While in office, they should be forced to live on the resources of average Americans.
     </AccordionBody>
   </AccordionItem>
-  {/* prison slave labor, measure of poverty, monopolies */}
+  {/* prison slave labor, measure of poverty, monopolies, parental leave */}
 </UncontrolledAccordion>
+</motion.div>
         </Col>
       </Row>
 
-      <Row className='my-3'>
+      <Row className='my-3'>      
       <Col className='text-center align-middle' style={{height: "100%"}}
       lg={{
         offset: 1,
         size: 5
       }}
       >
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: .5, duration: 3.5 }}
+      >
         <h3>Corporations are blaming rising wages and production costs for inflation</h3>
         <h4>The reality is that their profits and executive pay are soaring</h4>
         <h4>Govt is no help - they are raising interest rates in hopes to increase unemployment to curb "excessively high wages"</h4>
         <h4>This is an attempt to create a recession to please their corporate overlords who believe workers are gaining too much power</h4>
+        </motion.div>
       </Col>
       <Col className='text-center'
       lg={{
         size: 5
       }}
       >
+        <motion.div
+        variants={pullRight}
+        initial="hidden"
+        whileInView='visible'
+        >
         <img src={profits} alt="Normal and recent growth in unit prices" className='img-fluid'/>
+        <a href='https://www.epi.org/blog/corporate-profits-have-contributed-disproportionately-to-inflation-how-should-policymakers-respond/' >Source: Economic Policy Institute</a>
+        </motion.div>
       </Col>
       </Row>
 
@@ -246,18 +354,52 @@ const HomePage = () => {
       </Row>
       <Row>
         <Col className='lrmargin'>
+        <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: .5, duration: 3 }}
+      viewport={{ once: true }}
+      >
           <p>
             Throughout the Industrial revolution our ancestors fought to end child labor, implement the 8 hour work day and negotiate for better pay. Strike-breaking tactics resulted in the deaths of workers, but still they fought on to ensure better lives for their children and grandchildren. Now decades of anti-union propaganda has overcome critical thinking and workers are giving their rights away, working 60 hour weeks and settling for sublivable wages.
           </p>
+          </motion.div>
+          <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: .5, duration: 3 }}
+      viewport={{ once: true }}
+      >
           <p>
-          With <b><em>approximately $4 billion spent each year on political lobbying and legalized bribery</em></b> in the form of campaign donations and Super PACs, workers have collectively lost power in the United States of America. Politicians represent less than 5% of the population and for decades the quality of life has consistently deteriorated for the majority. Workers do not have the resources to effectively lobby government the way corporations and the wealthy can, but we have <b>strength in numbers</b>.  For this reason we are creating the ALL WORKERS UNION to represent the interests of the majority.
+          With <b><em>approximately $4 billion spent each year<sup><a href="#sources">1</a></sup> on political lobbying and legalized bribery</em></b> in the form of campaign donations and Super PACs, workers have collectively lost power in the United States of America. Politicians represent less than 5% of the population and for decades the quality of life has consistently deteriorated for the majority. Workers do not have the resources to effectively lobby government the way corporations and the wealthy can, but we have <b>strength in numbers</b>.  For this reason we are creating the ALL WORKERS UNION to represent the interests of the majority.
           </p>
+          </motion.div>
+          <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: .5, duration: 3 }}
+      viewport={{ once: true }}
+      >
           <p>
           Imagine if the people could negotiate fair contracts that see them compensated for revenue they produce at a corporation instead of seeing the majority of profits distributed to executives and shareholders.  By uniting, we can see this change.  Together we will bring the USA back to the days of progress, innovation and a high standard of living admired by the rest of the world.
           </p>
+          </motion.div>
+          <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: .5, duration: 3 }}
+      viewport={{ once: true }}
+      >
           <p>
           Increasing wages for the bottom would increase wages for the majority of the population and provide government with the ability to lower taxes or bring much needed tax revenue for underfunded programs such as education and infrastructure. <b><em>When workers get a wage hike, it means more money circulating in the economy and it helps the nation.</em></b> When the wealthy take more for themselves, it means more funds hoarded in a bank account or offshore, never to be spent. 
           </p>
+          </motion.div>
+        </Col>
+      </Row>
+
+      <Row id="sources" className='my-5'>
+        <Col className='lrmargin10'>
+          <p><a href="https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/"><sup>1</sup>Published by Statista Research Department, &amp; 30, S. (2022, September 30). Total lobbying spending U.S. 2021. Statista. Retrieved November 1, 2022, from https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/ </a></p>
         </Col>
       </Row>
       
