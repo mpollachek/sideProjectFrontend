@@ -93,9 +93,7 @@ const GetInvolved = () => {
           color: "#fff",
         }}
       >
-        <Col className="text-center my-4 lrmargin"
-        style={{textShadow: '0 0 2px #000, 0 0 5px #000'}}
-        >
+        <Col className="text-center my-4 lrmargin blshadow">
           <h2>
             Together, We will Create a Labor Strike that Will Force Corporations
             and the Government to Improve our Working Conditions and
@@ -210,7 +208,7 @@ const GetInvolved = () => {
         </Col>
       </Row>
       
-      <Row className="text-center bg-imgs"
+      <Row className="text-center blshadow"
       style={{
         backgroundImage: `url(${construction})`
       }}
@@ -296,7 +294,7 @@ const GetInvolved = () => {
       </Row>
       </Row>
 
-      <Row id="sources" className="bg-imgs"
+      <Row id="sources"
       style={{
         backgroundImage: `url(${leaves})`
             }}
