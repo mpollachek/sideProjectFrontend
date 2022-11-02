@@ -371,7 +371,7 @@ const HomePage = () => {
       viewport={{ once: true }}
       >
           <p>
-          With <b><em>approximately $4 billion spent each year<sup><a href="#sources">1</a></sup> on political lobbying and legalized bribery</em></b> in the form of campaign donations and Super PACs, workers have collectively lost power in the United States of America. Politicians represent less than 5% of the population and for decades the quality of life has consistently deteriorated for the majority. Workers do not have the resources to effectively lobby government the way corporations and the wealthy can, but we have <b>strength in numbers</b>.  For this reason we are creating the ALL WORKERS UNION to represent the interests of the majority.
+          With <b><em>approximately $4 billion spent each year on political lobbying<sup><a href="#sources">1</a></sup></em></b> as well as legalized bribery in the form of campaign donations and Super PACs, workers have collectively lost power in the United States of America. Politicians represent less than 5% of the population and for decades the quality of life has consistently deteriorated for the majority. Workers do not have the resources to effectively lobby government the way corporations and the wealthy can, but we have <b>strength in numbers</b>.  For this reason we are creating the ALL WORKERS UNION to represent the interests of the majority.
           </p>
           </motion.div>
           <motion.div
