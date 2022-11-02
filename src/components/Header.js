@@ -29,7 +29,7 @@ const Header = () => {
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
-        <Nav className='ms-auto' navbar>
+        <Nav className='ms-auto' navbar onClick={() => setMenuOpen(!menuOpen)}>
         <NavItem>
               <NavLink className='nav-link navfont' to='/'>
                   <HomeRoundedIcon className='navicons'/>Home 
