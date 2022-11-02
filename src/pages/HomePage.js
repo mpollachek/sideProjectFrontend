@@ -40,35 +40,29 @@ const HomePage = () => {
   const springDown = {
     init: { y: -500 },
     animate: {y: [-500, 0, -75, 0, -25, 0], times: [null, .7, .8, .9, .95, 1] ,
-    transition: { delay: .75, duration: 2, type: "spring" } },
-    viewport: { once: true }
+    transition: { delay: .75, duration: 2, type: "spring" } }
   };
   const pullUp = {
     hidden: { y: "200px", opacity: 0 },
-    visible: { y: "0", opacity: 1, transition: { delay: .5, duration: 1 } },
-    viewport: { once: true }
+    visible: { y: "0", opacity: 1, transition: { delay: .5, duration: 1 } }
   };
   const pullLeft = {
     hidden: { x: "60vw", opacity: 0 },
-    visible: { x: "0", opacity: 1, transition: { delay: 1, duration: 1 } },
-    viewport: { once: true }
+    visible: { x: "0", opacity: 1, transition: { delay: 1, duration: 1 } }
   };
   const pullRight = {
     hidden: { x: "-60vw", opacity: 0 },
-    visible: { x: "0", opacity: 1, transition: { delay: .75, duration: 1 } },
-    viewport: { once: true }
+    visible: { x: "0", opacity: 1, transition: { delay: .75, duration: 1 } }
   };
   const pullTowards = {
     init: { scale: 0, opacity: 0 },
     animate: { scale: [0, 1.5, 1], times: [null, .7, 1 ],
-    opacity: 1, transition: { delay: 1.25, duration: 2 }},
-    viewport: { once: true }
+    opacity: 1, transition: { delay: 1.25, duration: 2 }}
   };
   const pullAway = {
     init: { scale: 0, opacity: 0 },
     animate: { scale: [0, 10, .4, 1], times: [null, .01, .7, 1 ],
-    opacity: 1, transition: { delay: 1.25, duration: 2 }},
-    viewport: { once: true }
+    opacity: 1, transition: { delay: 1.25, duration: 2 }}
   };
   
   return(
@@ -124,6 +118,7 @@ const HomePage = () => {
         variants={pullUp}
         initial="hidden"
         whileInView='visible'
+        viewport={{ once: true }}
         >
         <h1 className='display-4 text-center'>We Fight for the Benefit of All Workers</h1>
         </motion.div>
@@ -131,6 +126,7 @@ const HomePage = () => {
         variants={pullRight}
         initial="hidden"
         whileInView='visible'
+        viewport={{ once: true }}
         >
         <h2 className='text-center'>Politicians and the Media are Working to Divide Us </h2>
         </motion.div>
@@ -138,6 +134,7 @@ const HomePage = () => {
         variants={pullLeft}
         initial="hidden"
         whileInView='visible'
+        viewport={{ once: true }}
         >
         <h2 className='text-center'>They want the Left and Right at War so that Nobody Looks Up
         </h2>
@@ -145,6 +142,7 @@ const HomePage = () => {
         <motion.div
         whileInView={{ scale: [0, 0, 1.5, 1], times: [null, 0.01, .7, 1 ], opacity: [0, 0, .7, 1]}}
         transition={{ delay: 1.5, duration: 2}}
+        viewport={{ once: true }}
         >
         <h3 className='text-center'>Greed and a lack of empathy should not be rewarded characteristics in an ethical society
         </h3>
@@ -155,6 +153,7 @@ const HomePage = () => {
       variants={pullAway}
       whileInView="animate"
       initial="init"
+      viewport={{ once: true }}
       >
       <Row className='banner2 text-center mt-4'>      
         <h1>Our Solutions</h1>
@@ -163,7 +162,7 @@ const HomePage = () => {
       <Row className='mt-5 lrmargin'>
         <Col md={4} className='order-last order-md-first'>
         <motion.div
-      whileInView={{ y: [0, -200, 0, -75, 0, -25, 0], times: [null, .01, .8, .87, .94, .97, 1], opacity: [0, 0, .5, .75, .9, .95, 1] }}
+      whileInView={{ y: [0, -100, 0, -75, 0, -25, 0], times: [null, .01, .8, .87, .94, .97, 1], opacity: [0, 0, .5, .75, .9, .95, 1] }}
       transition={{ delay: 1, duration: 1.5, type: "spring" }}
       viewport={{ once: true }}
       >
@@ -187,9 +186,10 @@ const HomePage = () => {
         variants={pullLeft}
         initial="hidden"
         whileInView='visible'
+        viewport={{ once: true }}
         >
   <UncontrolledAccordion defaultOpen="1" style={{whiteSpace: 'pre-wrap'}} 
-  className='order-first order-md-last'
+  className='order-first order-md-last mb-3'
   >
   <AccordionItem>
     <AccordionHeader targetId="1">

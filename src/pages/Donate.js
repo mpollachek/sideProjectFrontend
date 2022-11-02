@@ -21,11 +21,13 @@ const Donate = () => {
 
       {/* donation information */}
 
-      <Row className="my-4">
+      
+
+      {/* <Row className="my-4">
         <Col className="text-center bannerDonate">
           <h3>With funding we plan to assemble a team of lawyers to defend workers and allow them to litigate current and former employers at no financial risk to themselves</h3>
         </Col>
-      </Row>
+      </Row> */}
 
     </Container>
   );

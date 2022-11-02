@@ -9,6 +9,8 @@ import GetInvolved from './pages/GetInvolved';
 import Donate from './pages/Donate';
 import Faq from './pages/Faq';
 import Test from './pages/Test';
+import Issues from './pages/Issues';
+
 
 function App() {
   return (
@@ -17,9 +19,10 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/Mission' element={<Mission />} />
-        <Route path='/AboutUs' element={<AboutUs />} />
+        {/* <Route path='/AboutUs' element={<AboutUs />} /> */}
         <Route path='/GetInvolved' element={<GetInvolved />} />
         <Route path='/faq' element={<Faq />} />
+        <Route path='/issues' element={<Issues />} />
         {/* <Route path='/store' element={<Store />} /> */}
         <Route path='/Donate' element={<Donate />} />
         <Route path='/Test' element={<Test />} />

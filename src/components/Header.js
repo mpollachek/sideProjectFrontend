@@ -17,7 +17,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import QuizIcon from '@mui/icons-material/Quiz';
-import Faq from '../pages/Faq';
+import ReportIcon from '@mui/icons-material/Report';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,10 +41,15 @@ const Header = () => {
               </NavLink>
           </NavItem>
           <NavItem>
+          <NavLink className='nav-link navfont' to='/Issues'>
+                  <ReportIcon className='navicons'/>Issues to Solve 
+              </NavLink>
+          </NavItem>
+          {/* <NavItem>
               <NavLink className='nav-link navfont' to='/AboutUs'>
                   <PeopleIcon className='navicons'/>Who We Are 
               </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
               <NavLink className='nav-link navfont' to='/GetInvolved'>
                   <EngineeringIcon className='navicons'/>Get Involved 

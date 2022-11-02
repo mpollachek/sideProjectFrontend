@@ -39,6 +39,18 @@ const GetInvolved = () => {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
   useEffect(() => {
+    Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        withCredentials: false,      
+      }).then((response) => {
+      setCount(response.data);
+      console.log(response.data);
+    });
+    }, []);
+
+  useEffect(() => {
     const interval = setInterval( async () => {
       await Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
         headers: {
@@ -72,11 +84,14 @@ const GetInvolved = () => {
   return (
     <Container className="full-width">
       <Row>
-      <h2 className='text-center mt-4 lrmargin'>Together, We will Create a Labor Strike that Will Force Corporations and the Government to Improve our Working Conditions and Compensation</h2>
-      <h2 className='text-center'><em>Please <b>Spread the Word</b> about the All Workers Union!</em></h2>
-      <h4 className='text-center my-3 lrmargin'>Whether you Wish to Improve Working Conditions for yourself, your Friends, your Family or you Simply Want your Fellow Countrymen to have an Improved Quality of Life, Please Join our Movement.</h4>
+        <Col  className='text-center my-4 lrmargin'>
+      <h2>Together, We will Create a Labor Strike that Will Force Corporations and the Government to Improve our Working Conditions and Compensation</h2>
+      <h2><em>Please <b>Spread the Word</b> about the All Workers Union!</em></h2>
+      <h4>Whether you Wish to Improve Working Conditions for yourself, your Friends, your Family or you Simply Want your Fellow Countrymen to have an Improved Quality of Life, Please Join our Movement.</h4>
+      </Col>
       </Row>
       <Row className='banner1 text-center lrmargin10'>
+        <Col>
       <h3 className='my-2'>Our Goal is to have 1 Million Workers Pledged to Strike</h3>
       <h3 className='mb-2'>Enter Your Email Address below to pledge to be part of the All Workers Union Strike</h3>
       <h3 className='mb-2'>Your Information is Safe and Private, You will be sent Notification when the Strike Date is Officially Planned</h3>
@@ -127,6 +142,7 @@ const GetInvolved = () => {
       </Form>
       </Formik>
       <h1 className='mt-2'>{count} Workers have Pledged to Strike</h1>
+      </Col>
       </Row>
       <Row>
         <Col className='mt-4 text-center'>
@@ -157,7 +173,7 @@ const GetInvolved = () => {
         </Col>
         <Col className='col-12'>
         <h1>Our Power is in our Numbers</h1>
-        <h2>Our first strike will be one million strong to start negotiations and help spread the word</h2>
+        <h2>Our first strike will be one day in length and one million strong to start negotiations and help spread the word</h2>
         <h3>If our demands aren't met we will strike for as long as it takes to have acceptable working conditions</h3>
         <h3>We will hit them where it hurts - their wallets. If there's one thing we can be sure of, it's billionaires' greed.</h3>
         </Col>
