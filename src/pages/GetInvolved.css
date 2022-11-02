@@ -4,11 +4,13 @@
 }
 
 .bggrn {
-  background-color: rgba(74, 120, 49, 0.5);
+  background-color: rgba(74, 120, 49, 0.6);
+  /* text-shadow: 0 0 2px #000, 0 0 5px #000; */
 }
 
 .bgornge {
-  background-color: rgb(204, 158, 33)
+  background-color: rgba(204, 158, 33, 0.6);
+  /* text-shadow: 0 0 2px #000, 0 0 5px #000; */
 }
 
 .lrmargin4 {
@@ -23,15 +25,48 @@
 
 .bannerlred {
   outline: 3px solid black;
-  background-color: rgb(212, 65, 65);
+  background-color: rgba(212, 65, 65, 0.6);
+  /* text-shadow: 0 0 2px #000, 0 0 5px #000; */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
 }
+
+/* .bgdark {
+  outline: 3px solid black;
+  background-color: rgba(27, 27, 27, 0.7);
+  text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
 
 p {
   font-size: 24
 }
+
+/* .bg-img {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  isolation: isolate;
+}
+
+.bg-img::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: black;
+  opacity: .5;
+  background-size: cover;
+} */
+

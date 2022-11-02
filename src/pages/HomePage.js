@@ -18,7 +18,7 @@ import statue from '../assets/workers1.jpg';
 import FDR from '../assets/FDR_nobiz.jpg';
 import hand from '../assets/the_hand_that_will_rule_the_world.jpg';
 import CBOchart1 from '../assets/CBO_wealth_chart_1.png';
-import CBOchart2 from '../assets/wealth_increase_distribution.png'
+import CBOchart2 from '../assets/wealth_increase_distribution.png';
 import profits from '../assets/profits_vs_labor_costs_EPI.png';
 import { motion, } from 'framer-motion';
 

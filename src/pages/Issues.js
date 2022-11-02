@@ -24,7 +24,6 @@ const Issues = () => {
       </Row>
 
                 {/* First Row of charts */}
-                
     <Row >
       <Col className='col-12 col-lg-6 my-3' style={{color: 'black'}}>
     <DisplayCard
