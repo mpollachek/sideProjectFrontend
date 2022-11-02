@@ -210,7 +210,8 @@ const GetInvolved = () => {
       
       <Row className="text-center blshadow"
       style={{
-        backgroundImage: `url(${construction})`
+        backgroundImage: `url(${construction})`,
+        backgroundSize: "cover"
       }}
       >
         <Col className="col-12">
