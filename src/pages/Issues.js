@@ -85,7 +85,7 @@ const Issues = () => {
       <h2>The charts above detail a major shift in wealth and income between the top 1% and bottom 90% of earners. Billionaire owned media want us believe this is normal and political leaders pretend to fight for our interests while passing bills that only benefit the wealthy</h2>
       {/* <h3>Decades of propaganda has turned much of America against workers and workers' rights. People vote for politicians who promise to eradicate our ability to negotiate with employers by eliminating our power to unionize.</h3> */}
       <h2>Below is a somewhat random selection of top S&P 500 corporations</h2>
-      <h3>Many top companies have CEO compensation over 1,000 times that of their workers. at a worker to CEO pay ratio of 1:1,000, a <b>worker would need to work for 1,000 years to earn what the CEO receives in 1 year</b>. To put this another way, <em>the worker would need to work for 3 years to receive what the CEO gets in 1 day</em></h3>
+      <h3>Many top companies have CEO compensation over 1,000 times that of their workers. At a worker to CEO pay ratio of 1:1,000, a <b>worker would need to work for 1,000 years to earn what the CEO receives in 1 year</b>. To put this another way, <em>the worker would need to work for 3 years to receive what the CEO gets in 1 day</em></h3>
       <h3>With approximately <em>64% of workers living paycheck to paycheck<sup><a href='#sources'>1</a></sup></em> this hoarding of wealth is creating an inexcusable stress on workers and the economy. Many workers lack the ability to seek proper medical care or purchase necessaties for their families. Wealth inequality is literally killing people and the trendlines show now sign of improving.</h3>
       </Col>
       </Row>
@@ -275,7 +275,7 @@ const Issues = () => {
       <Row>
         <Col  className='text-center my-4 lrmargin'>
       <h2>Many fortune 500 companies make <b>BILLIONS</b> in profits, pay little to no taxes thanks to a myriad of tax law loopholes and keep their workers in poverty with sublivable compensation. Taxpayers are forced to pay these workers wages through welfare programs such as Snap benefits</h2>
-      <h3>The massive profits going to shareholders and executives are essentially removed from our economy by being stored in long term investment accounts or moved offshore. If workers were fairly compensated for the profits they produce for their employers, we would see higher spending, an increase in the number of small businesses in operation and a happier population by removing the great stresses of financial insecurity.</h3>
+      <h3>The massive profits going to shareholders and executives is wealth essentially removed from our economy by being stored in long term investment accounts or moved offshore. If workers were fairly compensated for the profits they produce for their employers, we would see higher spending, an increase in the number of small businesses in operation and a happier population by removing the great stresses of financial insecurity.</h3>
       </Col>
       </Row>
 
