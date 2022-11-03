@@ -70,7 +70,9 @@ const HomePage = () => {
   return(
     
     <Container className="full-width" style={{color: 'black', overflowX: 'hidden' }} >
-      <Row className='rwb-bg'>
+      <Row className='rwb-bg'
+      style={{textShadow: '0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255)'}}
+      >
       <Row className='py-4'>
       <motion.div
       variants={pullTowards}
@@ -164,7 +166,9 @@ const HomePage = () => {
       initial="init"
       viewport={{ once: true }}
       >
-      <Row className='banner2 text-center mt-4'>      
+      <Row className='banner2 text-center mt-4'
+      style={{textShadow: '0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255)'}}
+      >      
         <h1>Our Solutions</h1>
       </Row>
       </motion.div>

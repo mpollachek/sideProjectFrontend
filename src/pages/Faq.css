@@ -13,3 +13,13 @@
     max-width: 50%;
   }
 }
+
+.bgfaqdark {
+  /* outline: 3px solid black; */
+  font-size: 1.1em;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

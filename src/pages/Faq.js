@@ -22,12 +22,19 @@ import {
 } from "reactstrap";
 import socialism from "../assets/socialism_definition_merriam-webster.png";
 import "./Faq.css";
+import sunset1 from '../assets/sunset1.jpg';
 
 const Faq = () => {
   return (
     <Container className="full-width">
-      <Row className="text-bg-dark lrmargin">
-        <Col>
+      <Row
+        className='bgfaqdark'
+        style={{backgroundImage: `url(${sunset1})`, backgroundSize: "cover"}}
+      >
+      <Row>
+        <Col className="offset-md-1 col-md-10"
+        style={{textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)'}}
+        >
           <h1 className="text-center">Frequently Asked Questions</h1>
           <h4 className="text-center">
             In addition to FAQs, we will pre-emptively respond to the common
@@ -47,8 +54,8 @@ const Faq = () => {
         </Col>
       </Row>
 
-      <Row className="lrmargin">
-        <Col className="solutions justify-content-end ms-2">
+      <Row>
+        <Col className="justify-content-end offset-md-1 col-md-10">
           <UncontrolledAccordion style={{ whiteSpace: "pre-wrap" }}>
             <AccordionItem>
               <AccordionHeader targetId="1">
@@ -283,6 +290,7 @@ const Faq = () => {
             {/* prison slave labor, measure of poverty */}
           </UncontrolledAccordion>
         </Col>
+      </Row>
       </Row>
     </Container>
   );
