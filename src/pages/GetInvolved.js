@@ -95,7 +95,7 @@ const GetInvolved = () => {
           color: "#fff",
         }}
       >
-        <Col className="text-center my-4 lrmargin blshadow">
+        <Col className="text-center my-4 blshadow">
           <h2>
             Together, We will Create a Labor Strike that Will Force Corporations
             and the Government to Improve our Working Conditions and
@@ -115,7 +115,7 @@ const GetInvolved = () => {
 
         {/* Pledge Banner */}
         <Row>
-          <Col className="banner1 text-center lrmargin10">
+          <Col className="banner1 text-center offset-1 col-10">
             <h3 className="my-2">
               Our Goal is to have 1 Million Workers Pledged to Strike
             </h3>

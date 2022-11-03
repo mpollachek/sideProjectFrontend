@@ -93,7 +93,7 @@ const HomePage = () => {
       // animate={{ y: [-500, 0, -75, 0, -25, 0], times: [null, .8, .87, .94, .97, 1] }}
       // transition={{ delay: 1, duration: 1.5, type: "spring" }}
       >
-      <Row className='banner1 text-center'>
+      <Row className='banner1 text-center offset-1 col-10'>
         <h1><Link to='/GetInvolved'>Join Our Movement</Link></h1>
         <h3>We Are Organizing a <b>Million Man Strike</b> to Negotiate with the Government</h3>
         <h3>Together we have the Power to Demand Fair Compensation for our Labor</h3>
