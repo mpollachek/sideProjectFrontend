@@ -109,8 +109,10 @@ const Issues = () => {
 
       {/* Executive vs worker pay chart */}
       <Row className='bg-light text-center'>
-        <Col>
-          <Table striped bordered size='sm'>
+        <Col style={{overflowX: 'auto'}}>
+          <Table striped bordered size='sm'
+          style={{width: 'auto'}}
+          >
             <thead>
               <tr style={{backgroundColor: 'rgb(221, 143, 17)'}}>
                 <th>Ticker</th>

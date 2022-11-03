@@ -20,15 +20,17 @@ const Mission = () => {
   return (
     <Container className="full-width">
     <Row>
-      <Col className='text-center lrmargin10 mt-3' >
+      <Col className='text-center offset-1 col-10 mt-3' >
         <h1>Our Mission is to Improve the Lives of Workers</h1>
         <h2>We will break the Barriers of Division Created by Politicians and the Media, Unite Workers and Demand Change</h2>
         <h2>The United States must eliminate wealth as the driving mechanism of our government</h2>
       </Col>
     </Row>
 
-    <Row className='lrmargin3'>
-      <Col className='col-12 bgLornge lrmargin3 my-3 col-md-5' >
+    <Row >
+      <Col className='bgLornge offset-1 col-10 my-3 col-md-5' 
+      style={{height: '100%'}}
+      >
         <h3 className='text-center'>Our Goals</h3>
         <List>
           <li>Increase wages of the lower and middle classes</li>
@@ -41,7 +43,7 @@ const Mission = () => {
           <li>Bring power back into the hands of the people by uniting against corruption and modern indentured servitude</li>
         </List>
       </Col>
-      <Col className='col-12 bgLornge lrmargin3 my-3 col-md-5'>
+      <Col className='bgLornge offset-1 col-10 offset-md-0 col-md-5 mx-md-2 my-3'>
         <h3 className='text-center'>Benefits of achieving our goals</h3>
         <List>
           <li>Strengthened economy</li>
@@ -58,17 +60,17 @@ const Mission = () => {
     </Row>
 
     <Row>
-      <Col className='text-center lrmargin10 mt-3' >
+      <Col className='text-center offset-1 col-10 mt-3' >
         <h3>Our purchasing power decreases each year and they tell us to budget better</h3>
         <h4>Their bank accounts fatten each year and it's time we tell them to buy fewer yachts and private jets</h4>
       </Col>
     </Row>
     
-    <Row className='my-3 lrmargin10 text-center'>
-      <Col className='col-lg-6'>
+    <Row className='text-center'>
+      <Col className='offset-1 col-10 col-lg-5 my-3'>
         <img src={oligarchy} alt="definition of oligarchy" className='definition'/>
       </Col>
-      <Col className='col-lg-6'>
+      <Col className='offset-1 col-10 offset-lg-0 col-lg-5 my-3'>
         <img src={plutocracy} alt="definition of plutocracy" className='definition'/>
       </Col>
     </Row>

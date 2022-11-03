@@ -51,11 +51,11 @@ const HomePage = () => {
     visible: { y: "0", opacity: 1, transition: { delay: .5, duration: 1 } }
   };
   const pullLeft = {
-    hidden: { x: "60vw", opacity: 0 },
+    hidden: { x: "50vw", opacity: 0 },
     visible: { x: "0", opacity: 1, transition: { delay: 1, duration: 1 } }
   };
   const pullRight = {
-    hidden: { x: "-60vw", opacity: 0 },
+    hidden: { x: "-50vw", opacity: 0 },
     visible: { x: "0", opacity: 1, transition: { delay: .75, duration: 1 } }
   };
   const pullTowards = {
@@ -174,8 +174,8 @@ const HomePage = () => {
         <h1>Our Solutions</h1>
       </Row>
       </motion.div>
-      <Row className='mt-5 lrmargin'>
-        <Col md={4} className='order-last order-md-first'>
+      <Row className='mt-5'>
+        <Col className='order-last order-md-first col-md-4 offset-md-1 col-12 text-center'>
         <motion.div
       whileInView={{ y: [0, -100, 0, -75, 0, -25, 0], times: [null, .01, .8, .87, .94, .97, 1], opacity: [0, 0, .5, .75, .9, .95, 1] }}
       transition={{ delay: 1, duration: 1.5, type: "spring" }}
@@ -196,7 +196,7 @@ const HomePage = () => {
         </Col>
 
         {/* Accordian */}
-        <Col className='solutions justify-content-end ms-2'>
+        <Col className='justify-content-end col-md-7'>
         <motion.div
         variants={pullLeft}
         initial="hidden"
@@ -339,7 +339,7 @@ const HomePage = () => {
             }}
       >
       <Row className='my-3'>      
-      <Col className='text-center align-middle' style={{height: "100%"}}
+      <Col className='text-center' 
       lg={{
         offset: 1,
         size: 5
@@ -348,7 +348,7 @@ const HomePage = () => {
       <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: .5, duration: 3.5 }}
+      transition={{ delay: .5, duration: 2.5 }}
       >
         <h3>Corporations are blaming rising wages and production costs for inflation</h3>
         <h4>The reality is that their profits and executive pay are soaring</h4>
@@ -366,7 +366,9 @@ const HomePage = () => {
         initial="hidden"
         whileInView='visible'
         >
-        <img src={profits} alt="Normal and recent growth in unit prices" className='img-fluid'/>
+        <img src={profits} alt="Normal and recent growth in unit prices" 
+        className='img-fluid'
+        />
         <a href='https://www.epi.org/blog/corporate-profits-have-contributed-disproportionately-to-inflation-how-should-policymakers-respond/' >Source: Economic Policy Institute</a>
         </motion.div>
       </Col>
@@ -374,6 +376,7 @@ const HomePage = () => {
       </Row>
 
       <Row
+      className='text-center'
       style={{
         backgroundImage: `url(${welderFlag})`,
         backgroundSize: 'cover',
@@ -381,18 +384,20 @@ const HomePage = () => {
         textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)',
             }}
       >
+        <Row>
+        <Col>
       <motion.div
         whileInView={{ scale: [0, 0, 1.5, 1], times: [null, 0.01, .7, 1 ], opacity: [0, 0, .7, 1]}}
         transition={{ delay: 1.5, duration: 2}}
         viewport={{ once: true }}
         >        
-      <Row>
-        <Col>
+      
         <h2 className='text-center justify-content-center mt-3'>The Problem is not that there are not Enough Resources to Provide Workers with Decent Wages</h2>
         <h2 className='text-center justify-content-center my-3'>The Problem is that there are not Enough Resources to Satisfy Executives and Shareholders</h2>
-        </Col>
-      </Row>
+        
       </motion.div>
+      </Col>
+      </Row>
       <Row>
         <Col className='lrmargin'
         style={{fontSize: '24px'}}

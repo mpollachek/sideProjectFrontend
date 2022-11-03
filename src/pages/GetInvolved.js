@@ -220,7 +220,7 @@ const GetInvolved = () => {
         <Col className="col-12">
           <h1>Across the USA workers are Unionizing</h1>
         </Col>
-        <Col className="bggrn lrmargin4 my-3 col-12 col-lg-5">
+        <Col className="bggrn offset-1 col-10 col-lg-5 my-3">
           <h4 className="my-3">
             Corporations are spending hundreds of millions of dollars on
             union-busting consulting firms
@@ -238,7 +238,7 @@ const GetInvolved = () => {
             millions ready to strike.
           </h4>
         </Col>
-        <Col className="bgornge my-3 lrmargin4 col-12 col-lg-5">
+        <Col className="bgornge offset-1 col-10 offset-lg-0 col-lg-5 my-3 mx-lg-3">
           <h4 className="my-3">
             Rather than support us, our government redistributes our tax dollars
             to the wealthy in the form of bailouts
@@ -283,7 +283,7 @@ const GetInvolved = () => {
         </Col>
       
 
-      <Row className="bannerlred text-center mt-2 mb-5">
+      <Row className="bannerlred text-center offset-1 col-10 mt-2 mb-5">
         <h3 className="my-2">Not in the USA but wish to join our movement?</h3>
         <h3 className="mb-3">
           We believe that extending this movement worldwide is inevitable. You
