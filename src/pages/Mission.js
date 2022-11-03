@@ -79,6 +79,7 @@ const Mission = () => {
       <Col>
         <h3>The terms oligarchy and plutocracy can both be used to accurately describe the USA</h3>
         <h3>If we truly want a government "of the people, by the people, for the people" we must remove money's influence on politics</h3> 
+        <h3>In the land of the "Free" our only choices are to work our lives away or become homeless and starve to death</h3> 
       </Col>
     </Row>
 

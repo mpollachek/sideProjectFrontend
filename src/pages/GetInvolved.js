@@ -300,49 +300,47 @@ const GetInvolved = () => {
 
       <Row id="sources"
       style={{
-        backgroundImage: `url(${leaves})`
+        backgroundImage: `url(${leaves})`,
+        backgroundSize: 'cover',
+        overflowWrap: 'break-word',
+        color: 'rgb(255, 255, 255)'
             }}
       >
         <Col className="offset-1 col-10 my-5 bgdark"
         >
-          <p>
-            <a href="https://www.citationmachine.net/bibliographies/38d08ec9-bdb0-415c-a979-b670a603df0b">
+          <p>            
               <sup>1</sup>Nguyen, J. (2022, April 12). Companies like Amazon
               spend millions on anti-union efforts. where's that money
               going?&nbsp;. Marketplace. Retrieved November 2, 2022, from
-              https://www.marketplace.org/2022/04/12/companies-like-amazon-spend-millions-on-anti-union-efforts-wheres-that-money-going/{" "}
+              <a href="https://www.citationmachine.net/bibliographies/38d08ec9-bdb0-415c-a979-b670a603df0b"> https://www.marketplace.org/2022/04/12/companies-like-amazon-spend-millions-on-anti-union-efforts-wheres-that-money-going/{" "}
             </a>
           </p>
 
-          <p>
-            <a href="https://time.com/5845116/coronavirus-bailout-rich-richer/">
+          <p>            
               <sup>2</sup>Abramson, A. (2020, June 18). Why the trillion-dollar
               bailout benefited the rich. Time. Retrieved November 2, 2022, from
-              https://time.com/5845116/coronavirus-bailout-rich-richer/{" "}
+              <a href="https://time.com/5845116/coronavirus-bailout-rich-richer/"> https://time.com/5845116/coronavirus-bailout-rich-richer/{" "}
             </a>
           </p>
 
           <p>
-            <a href="https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/">
               <sup>3</sup>CBS Interactive. (2022, January 22). Most of the $800
               billion in PPP loans did not go to workers, new study finds. CBS
-              News. Retrieved November 2, 2022, from
-              https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/{" "}
+              News. Retrieved November 2, 2022, from <a href="https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/">
+               https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/{" "}
             </a>
           </p>
 
-          <p>
-            <a href="https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/">
+          <p>            
               <sup>4</sup>Gillespie, N. (2021, March 6). 5 ways Elon Musk and
               other billionaires get welfare for the rich. Reason.com. Retrieved
-              November 2, 2022, from
-              https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/{" "}
+              November 2, 2022, from <a href="https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/">
+               https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/{" "}
             </a>
           </p>
 
-          <p>
-            <a href="https://goodjobsfirst.org/">
-              <sup>5</sup>https://goodjobsfirst.org/{" "}
+          <p>            
+              <sup>5</sup><a href="https://goodjobsfirst.org/">https://goodjobsfirst.org/{" "}
             </a>
           </p>
         </Col>

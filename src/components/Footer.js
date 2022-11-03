@@ -11,12 +11,14 @@ import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import QuizIcon from '@mui/icons-material/Quiz';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import ReportIcon from '@mui/icons-material/Report';
 
 const Footer = () => {
     return (
         <footer >
             <Container className='full-width site-footer'>
-                <Row>
+                <Row
+                >
                     <Col xs={{ size: 5, offset: 1 }} className='text-center my-4'>
                         <ul className='list-unstyled'>
                             <li>
@@ -26,7 +28,7 @@ const Footer = () => {
                             <Link to='/Mission' className='footericons'><AssignmentTurnedInRoundedIcon/>Our Mission</Link>
                             </li>
                             <li>
-                            <Link to='/AboutUs' className='footericons'><PeopleIcon/>Who We Are</Link>
+                            <Link to='/Issues' className='footericons'><ReportIcon/>Issues to Solve</Link>
                             </li>
                             <li>
                             <Link to='/GetInvolved' className='footericons'><EngineeringIcon />Get Involved</Link>
@@ -41,15 +43,16 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col xs='5' className='text-center my-4'>
+                    <Col xs='5' className='text-center my-4'
+                    >
                         
                         <br />
                         <a
                             role='button'
                             className='btn btn-link footericons'
-                            href='mailto:notreal@notreal.co'
+                            href='mailto:support@allworkersunion.com'
                         >
-                            <EmailIcon/> support@allworkersunion.com
+                            <EmailIcon/> support@ allworkersunion.com
                         </a>
                         <br />
                         <a

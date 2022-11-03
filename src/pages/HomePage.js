@@ -450,12 +450,14 @@ const HomePage = () => {
       <Row id="sources"
       style={{
         backgroundImage: `url(${leaves})`,
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        overflowWrap: 'break-word',
+        color: 'rgb(255, 255, 255)'
             }}
       >
         <Col className="offset-1 col-10 my-5 bgdark"
         >
-          <p><a href="https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/"><sup>1</sup>Published by Statista Research Department, &amp; 30, S. (2022, September 30). Total lobbying spending U.S. 2021. Statista. Retrieved November 1, 2022, from https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/ </a></p>
+          <p><sup>1</sup>Published by Statista Research Department, &amp; 30, S. (2022, September 30). Total lobbying spending U.S. 2021. Statista. Retrieved November 1, 2022, from <a href="https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/"> https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/ </a></p>
         </Col>
       </Row>
       

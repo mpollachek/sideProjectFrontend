@@ -312,12 +312,15 @@ const Issues = () => {
 
       <Row id="sources"
       style={{
-        backgroundImage: `url(${leaves})`
+        backgroundImage: `url(${leaves})`,
+        backgroundSize: 'cover',
+        overflowWrap: 'break-word',
+        color: 'rgb(255, 255, 255)'
             }}
       >
         <Col className="offset-1 col-10 my-5 bgdark"
         >
-          <p style={{textShadow: '0 0 1px #000000, 0 0 2px #000000'}} ><a href="https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx"><sup>1</sup>48 percent of Americans with annual incomes over $100,000 live paycheck to paycheck, 9 percentage points higher than first reported in June 2021. Corporate Profile. (n.d.). Retrieved November 1, 2022, from https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx  </a></p>
+          <p style={{textShadow: '0 0 1px #000000, 0 0 2px #000000'}} ><sup>1</sup>48 percent of Americans with annual incomes over $100,000 live paycheck to paycheck, 9 percentage points higher than first reported in June 2021. Corporate Profile. (n.d.). Retrieved November 1, 2022, from <a href="https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx"> https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx  </a></p>
         </Col>
       </Row>
 
