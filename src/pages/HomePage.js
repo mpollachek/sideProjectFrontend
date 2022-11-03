@@ -23,6 +23,8 @@ import profits from '../assets/profits_vs_labor_costs_EPI.png';
 import { motion, } from 'framer-motion';
 import leaves from '../assets/leaves.jpg';
 import flagBricks from '../assets/flag-bricks.jpg';
+import welderFlag from '../assets/welder-flag.jpg';
+import waterLily from '../assets/water-lily.png';
 
 const HomePage = () => {
   const [toggle, setToggle] = useState(false);
@@ -35,9 +37,9 @@ const HomePage = () => {
     setToggle(true);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0,0);
+  // }, []);
 
   const springDown = {
     init: { y: -500 },
@@ -330,7 +332,7 @@ const HomePage = () => {
       
       <Row
       style={{
-        backgroundImage: `url(${statue})`,
+        backgroundImage: `url(${waterLily})`,
         backgroundSize: 'cover',
         color: 'rgb(255, 255, 255)',
         textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)'
@@ -369,8 +371,16 @@ const HomePage = () => {
         </motion.div>
       </Col>
       </Row>
+      </Row>
 
-
+      <Row
+      style={{
+        backgroundImage: `url(${welderFlag})`,
+        backgroundSize: 'cover',
+        color: 'rgb(255, 255, 255)',
+        textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)',
+            }}
+      >
       <motion.div
         whileInView={{ scale: [0, 0, 1.5, 1], times: [null, 0.01, .7, 1 ], opacity: [0, 0, .7, 1]}}
         transition={{ delay: 1.5, duration: 2}}
@@ -430,6 +440,7 @@ const HomePage = () => {
         </Col>
       </Row>
       </Row>
+      
 
       <Row id="sources"
       style={{
