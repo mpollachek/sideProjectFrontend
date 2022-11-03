@@ -10,13 +10,25 @@ import CBOchart1 from '../assets/CBO_wealth_chart_1.png';
 import CBOchart2 from '../assets/wealth_increase_distribution.png'
 import wageGroup from '../assets/EPI_wage_group.png';
 import productivity from '../assets/EPI_productivity.png';
+import leaves from '../assets/leaves.jpg';
+import TreeRings from '../assets/tree-rings.jpg';
+import roof from '../assets/roof.jpg';
+import stars from '../assets/stars.jpg';
 
 const Issues = () => {
 
   return(
     <Container className="full-width">
-      <Row>
-        <Col  className='text-center my-4 lrmargin'>
+      <Row 
+      style={{
+        backgroundImage: `url(${roof})`, 
+        backgroundSize: "cover",
+           
+    }}
+      >
+        <Col  className='text-center my-4 lrmargin'
+        style={{textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)'}}
+        >
       <h2>On a macro scale, we believe that there are two primary issues that must be resolved for our population to be strong and happy again</h2>
       <h3>First, we must strengthen workers rights and fairly compensate them for their labor, thereby reducing wealth and income inequality and building a strong economy that works for the majority rather than the few</h3>
       <h3>Second, we must push for a change in government and laws in such a way that legislation is not controlled by wealth</h3>
@@ -80,7 +92,12 @@ const Issues = () => {
 
       {/* End of charts */}
 
-      <Row>
+      <Row
+        style={{backgroundImage: `url(${TreeRings})`, 
+        backgroundSize: "cover",
+        textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)'
+  }}        
+      >
         <Col  className='text-center my-4 lrmargin'>
       <h2>The charts above detail a major shift in wealth and income between the top 1% and bottom 90% of earners. Billionaire owned media want us believe this is normal and political leaders pretend to fight for our interests while passing bills that only benefit the wealthy</h2>
       {/* <h3>Decades of propaganda has turned much of America against workers and workers' rights. People vote for politicians who promise to eradicate our ability to negotiate with employers by eliminating our power to unionize.</h3> */}
@@ -275,7 +292,15 @@ const Issues = () => {
           </Table>        
         </Col>
       </Row>
-      <Row>
+      {/* End of Chart */}
+
+      <Row
+        style={{
+          backgroundImage: `url(${stars})`, 
+          backgroundSize: "cover",
+          textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)'
+        }}
+      >
         <Col  className='text-center my-4 lrmargin'>
       <h2>Many fortune 500 companies make <b>BILLIONS</b> in profits, pay little to no taxes thanks to a myriad of tax law loopholes and keep their workers in poverty with sublivable compensation. Taxpayers are forced to pay these workers wages through welfare programs such as Snap benefits</h2>
       <h3>The massive profits going to shareholders and executives is wealth essentially removed from our economy by being stored in long term investment accounts or moved offshore. If workers were fairly compensated for the profits they produce for their employers, we would see higher spending, an increase in the number of small businesses in operation and a happier population by removing the great stresses of financial insecurity.</h3>
@@ -283,8 +308,13 @@ const Issues = () => {
       </Row>
 
 
-      <Row id="sources" className='my-5'>
-        <Col className='lrmargin10'>
+      <Row id="sources"
+      style={{
+        backgroundImage: `url(${leaves})`
+            }}
+      >
+        <Col className="lrmargin10 my-5 bgdark"
+        >
           <p style={{textShadow: '0 0 1px #000000, 0 0 2px #000000'}} ><a href="https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx"><sup>1</sup>48 percent of Americans with annual incomes over $100,000 live paycheck to paycheck, 9 percentage points higher than first reported in June 2021. Corporate Profile. (n.d.). Retrieved November 1, 2022, from https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx  </a></p>
         </Col>
       </Row>

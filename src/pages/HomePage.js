@@ -21,6 +21,8 @@ import CBOchart1 from '../assets/CBO_wealth_chart_1.png';
 import CBOchart2 from '../assets/wealth_increase_distribution.png';
 import profits from '../assets/profits_vs_labor_costs_EPI.png';
 import { motion, } from 'framer-motion';
+import leaves from '../assets/leaves.jpg';
+import flagBricks from '../assets/flag-bricks.jpg';
 
 const HomePage = () => {
   const [toggle, setToggle] = useState(false);
@@ -67,7 +69,8 @@ const HomePage = () => {
   
   return(
     
-    <Container className="container-bg full-width" style={{color: 'black', overflowX: 'hidden' }} >
+    <Container className="full-width" style={{color: 'black', overflowX: 'hidden' }} >
+      <Row className='rwb-bg'>
       <Row className='py-4'>
       <motion.div
       variants={pullTowards}
@@ -105,7 +108,11 @@ const HomePage = () => {
       transition={{ delay: 1, duration: 5 }}
       viewport={{ once: true }}
       >
-        <h1 className='display-4 imageTextProps1'>We Are Not Left<span className='imageTextProps2'>We Are Not Right</span></h1> 
+        <h1 
+        style={{
+          fontSize: '72px',
+        }}
+        className='display-4 imageTextProps1'><b>We Are Not Left</b><span className='imageTextProps2'><b>We Are Not Right</b></span></h1> 
         </motion.div>
       </Col>
       
@@ -148,7 +155,9 @@ const HomePage = () => {
         </h3>
         </motion.div>
       </Row>
+      </Row>
 
+      <Row className='rwb-bg'>
       <motion.div
       variants={pullAway}
       whileInView="animate"
@@ -313,7 +322,16 @@ const HomePage = () => {
 </motion.div>
         </Col>
       </Row>
-
+      </Row>
+      
+      <Row
+      style={{
+        backgroundImage: `url(${statue})`,
+        backgroundSize: 'cover',
+        color: 'rgb(255, 255, 255)',
+        textShadow: '0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0)'
+            }}
+      >
       <Row className='my-3'>      
       <Col className='text-center align-middle' style={{height: "100%"}}
       lg={{
@@ -348,16 +366,23 @@ const HomePage = () => {
       </Col>
       </Row>
 
+
+      <motion.div
+        whileInView={{ scale: [0, 0, 1.5, 1], times: [null, 0.01, .7, 1 ], opacity: [0, 0, .7, 1]}}
+        transition={{ delay: 1.5, duration: 2}}
+        viewport={{ once: true }}
+        >        
       <Row>
         <h4 className='text-center justify-content-center mt-3'>The Problem is not that there are not Enough Resources to Provide Workers with Decent Wages</h4>
         <h4 className='text-center justify-content-center my-3'>The Problem is that there are not Enough Resources to Satisfy Executives and Shareholders</h4>
       </Row>
+      </motion.div>
       <Row>
         <Col className='lrmargin'>
         <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: .5, duration: 3 }}
+      transition={{ delay: .25, duration: 2 }}
       viewport={{ once: true }}
       >
           <p>
@@ -396,9 +421,16 @@ const HomePage = () => {
           </motion.div>
         </Col>
       </Row>
+      </Row>
 
-      <Row id="sources" className='my-5'>
-        <Col className='lrmargin10'>
+      <Row id="sources"
+      style={{
+        backgroundImage: `url(${leaves})`,
+        backgroundSize: 'cover'
+            }}
+      >
+        <Col className="lrmargin10 my-5 bgdark"
+        >
           <p><a href="https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/"><sup>1</sup>Published by Statista Research Department, &amp; 30, S. (2022, September 30). Total lobbying spending U.S. 2021. Statista. Retrieved November 1, 2022, from https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/ </a></p>
         </Col>
       </Row>

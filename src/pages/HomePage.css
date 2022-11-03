@@ -1,9 +1,10 @@
 .firstImage {
-  background-image: url("../assets/workers1.jpg");
+  background-image: url("../assets/flag-bricks.jpg");
   margin-left: 5%;
   max-width: 90%;
   min-height: 600px;
   background-size: cover;
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
 }
 
 .imageText {
@@ -23,7 +24,7 @@
   float: right;
 }
 
-.container-bg {
+.rwb-bg {
   background: linear-gradient(to right bottom, #004cff, #ffffff, #ff0000);
 }
 
