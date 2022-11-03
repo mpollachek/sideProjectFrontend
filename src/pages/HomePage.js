@@ -373,12 +373,16 @@ const HomePage = () => {
         viewport={{ once: true }}
         >        
       <Row>
-        <h4 className='text-center justify-content-center mt-3'>The Problem is not that there are not Enough Resources to Provide Workers with Decent Wages</h4>
-        <h4 className='text-center justify-content-center my-3'>The Problem is that there are not Enough Resources to Satisfy Executives and Shareholders</h4>
+        <Col>
+        <h2 className='text-center justify-content-center mt-3'>The Problem is not that there are not Enough Resources to Provide Workers with Decent Wages</h2>
+        <h2 className='text-center justify-content-center my-3'>The Problem is that there are not Enough Resources to Satisfy Executives and Shareholders</h2>
+        </Col>
       </Row>
       </motion.div>
       <Row>
-        <Col className='lrmargin'>
+        <Col className='lrmargin'
+        style={{fontSize: '24px'}}
+        >
         <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
