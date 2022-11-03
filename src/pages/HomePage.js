@@ -8,6 +8,8 @@ import {
   AccordionHeader,
   AccordionItem,
   UncontrolledAccordion,
+  Modal,
+  ModalFooter,
 } from 'reactstrap';
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
@@ -36,6 +38,9 @@ const HomePage = () => {
   useEffect(() => {
     setToggle(true);
   }, []);
+
+  const [modal, setModal] = useState(false);
+    const toggleModal = () => setModal(!modal);
 
   // useEffect(() => {
   //   window.scrollTo(0,0);
@@ -355,23 +360,42 @@ const HomePage = () => {
         <h4>Govt is no help - they are raising interest rates in hopes to increase unemployment to curb "excessively high wages"</h4>
         <h4>This is an attempt to create a recession to please their corporate overlords who believe workers are gaining too much power</h4>
         </motion.div>
-      </Col>
-      <Col className='text-center'
+      </Col>      
+      <Col className='text-center hand' 
       lg={{
         size: 5
       }}
-      >
+      >        
         <motion.div
         variants={pullRight}
         initial="hidden"
         whileInView='visible'
         >
+          <motion.div
+          whileHover={{ 
+            scale: [null, 1.2, 1.1 ],
+          }}
+          transition={{ duration: 0.6 }}
+          onClick={toggleModal}
+        >
+          
         <img src={profits} alt="Normal and recent growth in unit prices" 
         className='img-fluid'
         />
         <a href='https://www.epi.org/blog/corporate-profits-have-contributed-disproportionately-to-inflation-how-should-policymakers-respond/' >Source: Economic Policy Institute</a>
         </motion.div>
+        </motion.div>        
       </Col>
+      <Modal isOpen={modal} toggle={toggleModal} size='xl' centered={true}>
+        <Col>
+        <img src={profits} alt="Normal and recent growth in unit prices" 
+        className='img-fluid'
+        />
+        <ModalFooter>
+        <a href='https://www.epi.org/blog/corporate-profits-have-contributed-disproportionately-to-inflation-how-should-policymakers-respond/' >Source: Economic Policy Institute</a>
+        </ModalFooter>
+        </Col>
+      </Modal>
       </Row>
       </Row>
 
