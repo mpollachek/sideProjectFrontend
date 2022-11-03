@@ -25,6 +25,8 @@ import teacher from "../assets/teacher1.jpg";
 import whiteBricks from "../assets/white-bricks.jpg";
 import leaves from "../assets/leaves.jpg";
 
+//need to look at mobile-center blocks and make overflowX hidden
+
 const GetInvolved = () => {
   const u = process.env.cyclicUser;
   const p = process.env.cyclicPword;
@@ -189,6 +191,7 @@ const GetInvolved = () => {
               billionaires more money
             </h2>
             <h1>Join Our Movement!</h1>
+
           </Col>
         </Row>
       </Row>
@@ -300,7 +303,7 @@ const GetInvolved = () => {
         backgroundImage: `url(${leaves})`
             }}
       >
-        <Col className="lrmargin10 my-5 bgdark"
+        <Col className="offset-1 col-10 my-5 bgdark"
         >
           <p>
             <a href="https://www.citationmachine.net/bibliographies/38d08ec9-bdb0-415c-a979-b670a603df0b">

@@ -73,7 +73,7 @@ const Mission = () => {
       </Col>
     </Row>
 
-    <Row className='bggrn lrmargin10 text-center my-3'>
+    <Row className='bggrn offset-1 col-10 text-center my-3'>
       <Col>
         <h3>The terms oligarchy and plutocracy can both be used to accurately describe the USA</h3>
         <h3>If we truly want a government "of the people, by the people, for the people" we must remove money's influence on politics</h3> 

@@ -448,7 +448,7 @@ const HomePage = () => {
         backgroundSize: 'cover'
             }}
       >
-        <Col className="lrmargin10 my-5 bgdark"
+        <Col className="offset-1 col-10 my-5 bgdark"
         >
           <p><a href="https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/"><sup>1</sup>Published by Statista Research Department, &amp; 30, S. (2022, September 30). Total lobbying spending U.S. 2021. Statista. Retrieved November 1, 2022, from https://www.statista.com/statistics/257337/total-lobbying-spending-in-the-us/ </a></p>
         </Col>
