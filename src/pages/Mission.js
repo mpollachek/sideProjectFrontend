@@ -12,6 +12,8 @@ import productivity from '../assets/EPI_productivity.png';
 import "./Mission.css";
 import oligarchy from '../assets/definition_oligarchy.png';
 import plutocracy from '../assets/definition_plutocracy.png';
+import hands from '../assets/hands.jpg';
+import lobbying from '../assets/lobbying.png';
 
 //list benefits of better pay/less hours
 // -mental health, happiness, 
@@ -19,8 +21,18 @@ const Mission = () => {
 
   return (
     <Container className="full-width">
+      <Row       
+        style={{
+          backgroundImage: `url(${hands})`,
+          backgroundSize: "cover",
+        }}
+      >
     <Row>
-      <Col className='text-center offset-1 col-10 mt-3' >
+      <Col className='text-center offset-1 col-10 mt-3' 
+      style={{
+        color: 'rgb(0,0,0',      
+        textShadow: '0 0 3px #ffffff, 0 0 5px #ffffff'}}
+      >
         <h1>Our Mission is to Improve the Lives of Workers</h1>
         <h2>We will break the Barriers of Division Created by Politicians and the Media, Unite Workers and Demand Change</h2>
         <h2>The United States must eliminate wealth as the driving mechanism of our government</h2>
@@ -60,18 +72,34 @@ const Mission = () => {
     </Row>
 
     <Row>
-      <Col className='text-center offset-1 col-10 mt-3' >
+      <Col className='text-center offset-1 col-10 mt-3' 
+      style={{
+        color: 'rgb(0,0,0', 
+        textShadow: '0 0 3px #ffffff, 0 0 5px #ffffff'
+      }}
+      >
         <h3>Our purchasing power decreases each year and they tell us to budget better</h3>
         <h4>Their bank accounts fatten each year and it's time we tell them to buy fewer yachts and private jets</h4>
       </Col>
     </Row>
-    
+    </Row>
+
+    <Row       
+        style={{
+          backgroundImage: `url(${lobbying})`,
+          backgroundSize: "cover",
+        }}
+      >    
     <Row className='text-center'>
       <Col className='offset-lg-1 col-lg-5 my-3'>
-        <img src={oligarchy} alt="definition of oligarchy" className='definition'/>
+        <img src={oligarchy} alt="definition of oligarchy" className='definition'
+        style={{opacity: 0.8}}
+        />
       </Col>
       <Col className='col-lg-5 my-3'>
-        <img src={plutocracy} alt="definition of plutocracy" className='definition'/>
+        <img src={plutocracy} alt="definition of plutocracy" className='definition'
+        style={{opacity: 0.8}}
+        />
       </Col>
     </Row>
 
@@ -79,8 +107,9 @@ const Mission = () => {
       <Col>
         <h3>The terms oligarchy and plutocracy can both be used to accurately describe the USA</h3>
         <h3>If we truly want a government "of the people, by the people, for the people" we must remove money's influence on politics</h3> 
-        <h3>In the land of the "Free" our only choices are to work our lives away or become homeless and starve to death</h3> 
+        <h3>In the "Land of the Free" our only choices are to work our lives away or become homeless and starve to death</h3> 
       </Col>
+    </Row>
     </Row>
 
 

@@ -5,11 +5,16 @@
 
 .bggrn {
   background-color: rgba(74, 120, 49, 0.5);
+  opacity: 0.75;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: rgb(255,255,255);
 }
 
 .bgLornge {
   background-color: rgb(246, 198, 66);
   color: #000;
+  opacity: 0.75;
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
 }
 
 .lrmargin3 {
