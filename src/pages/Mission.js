@@ -67,10 +67,10 @@ const Mission = () => {
     </Row>
     
     <Row className='text-center'>
-      <Col className='offset-1 col-10 col-lg-5 my-3'>
+      <Col className='offset-lg-1 col-lg-5 my-3'>
         <img src={oligarchy} alt="definition of oligarchy" className='definition'/>
       </Col>
-      <Col className='offset-1 col-10 offset-lg-0 col-lg-5 my-3'>
+      <Col className='col-lg-5 my-3'>
         <img src={plutocracy} alt="definition of plutocracy" className='definition'/>
       </Col>
     </Row>

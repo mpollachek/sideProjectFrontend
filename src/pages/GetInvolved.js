@@ -191,6 +191,9 @@ const GetInvolved = () => {
               billionaires more money
             </h2>
             <h1>Join Our Movement!</h1>
+            <h3>
+              We will have strike meetup locations in major cities and, for those able to make it, we will march in Washington DC - We will make our voices heard!
+            </h3>
 
           </Col>
         </Row>
