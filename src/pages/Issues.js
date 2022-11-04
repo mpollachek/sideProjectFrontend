@@ -111,7 +111,7 @@ const Issues = () => {
       <Row className='bg-light text-center'>
         <Col style={{overflowX: 'auto'}}>
           <Table striped bordered size='sm'
-          style={{width: 'auto'}}
+          style={{width: '100%'}}
           >
             <thead>
               <tr style={{backgroundColor: 'rgb(221, 143, 17)'}}>
@@ -304,7 +304,7 @@ const Issues = () => {
         }}
       >
         <Col  className='text-center my-4 lrmargin'>
-      <h2>Many fortune 500 companies make <b>BILLIONS</b> in profits, pay little to no taxes thanks to a myriad of tax law loopholes and keep their workers in poverty with sublivable compensation. Taxpayers are forced to pay these workers wages through welfare programs such as Snap benefits</h2>
+      <h2>Many fortune 500 companies make <b>BILLIONS</b> in profits, pay little to no taxes<sup><a href='#sources'>2</a></sup> thanks to a myriad of tax law loopholes and keep their workers in poverty with sublivable compensation. Taxpayers are forced to pay these workers wages, thereby subsidizing multi-billion dollar corporations, through welfare programs such as SNAP benefits</h2>
       <h3>The massive profits going to shareholders and executives is wealth essentially removed from our economy by being stored in long term investment accounts or moved offshore. If workers were fairly compensated for the profits they produce for their employers, we would see higher spending, an increase in the number of small businesses in operation and a happier population by removing the great stresses of financial insecurity.</h3>
       </Col>
       </Row>
@@ -320,7 +320,8 @@ const Issues = () => {
       >
         <Col className="offset-1 col-10 my-5 bgdark"
         >
-          <p style={{textShadow: '0 0 1px #000000, 0 0 2px #000000'}} ><sup>1</sup>48 percent of Americans with annual incomes over $100,000 live paycheck to paycheck, 9 percentage points higher than first reported in June 2021. Corporate Profile. (n.d.). Retrieved November 1, 2022, from <a href="https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx"> https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx  </a></p>
+          <p><sup>1</sup>48 percent of Americans with annual incomes over $100,000 live paycheck to paycheck, 9 percentage points higher than first reported in June 2021. Corporate Profile. (n.d.). Retrieved November 1, 2022, from <a href="https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx"> https://ir.lendingclub.com/news/news-details/2022/48-Percent-of-Americans-with-Annual-Incomes-over-100000-Live-Paycheck-to-Paycheck-9-percentage-points-higher-than-first-reported-in-June-2021/default.aspx  </a></p>
+          <p><sup>2</sup>Ross, J., Khattar, R., Hanlon, S., Simpson, E., Rapfogel, N., Spitzer, E., &amp; Truong, T. Q. (2022, April 25). These 19 fortune 100 companies paid next to nothing-or nothing at all-in taxes in 2021. Center for American Progress. Retrieved November 3, 2022, from <a href="https://www.americanprogress.org/article/these-19-fortune-100-companies-paid-next-to-nothing-or-nothing-at-all-in-taxes-in-2021/"> https://www.americanprogress.org/article/these-19-fortune-100-companies-paid-next-to-nothing-or-nothing-at-all-in-taxes-in-2021/</a></p>
         </Col>
       </Row>
 
@@ -329,3 +330,4 @@ const Issues = () => {
 }
 
 export default Issues;
+

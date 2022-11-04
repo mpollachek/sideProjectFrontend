@@ -281,9 +281,7 @@ const Faq = () => {
                 of wealth and convince as many as possible that we want to
                 defund programs like education and social security and that we
                 want to give up our rights. As a population we could love our
-                neightbors and get along peacefully if they weren't stirring the
-                pot each and every day. They have created extremists out of our
-                friends and family and yet, nobody lifts a finger to stop it.
+                neighbors and get along peacefully if media and politicians weren't stirring the pot each and every day. They have created extremists out of our friends and family and yet, nobody lifts a finger to stop it.
               </AccordionBody>
             </AccordionItem>
 
