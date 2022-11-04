@@ -41,7 +41,6 @@ const Mission = () => {
 
     <Row >
       <Col className='bgLornge offset-1 col-10 my-3 col-md-5' 
-      style={{height: '100%'}}
       >
         <h3 className='text-center'>Our Goals</h3>
         <List>
