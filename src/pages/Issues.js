@@ -103,7 +103,7 @@ const Issues = () => {
       {/* <h3>Decades of propaganda has turned much of America against workers and workers' rights. People vote for politicians who promise to eradicate our ability to negotiate with employers by eliminating our power to unionize.</h3> */}
       <h2>Below is a somewhat random selection of top S&P 500 corporations</h2>
       <h3>Many top companies have CEO compensation over 1,000 times that of their workers. At a worker to CEO pay ratio of 1:1,000, a <b>worker would need to work for 1,000 years to earn what the CEO receives in 1 year</b>. To put this another way, <em>the worker would need to work for 3 years to receive what the CEO gets in 1 day</em></h3>
-      <h3>With approximately <em>64% of workers living paycheck to paycheck<sup><a href='#sources'>1</a></sup></em> this hoarding of wealth is creating an inexcusable stress on workers and the economy. Many workers lack the ability to seek proper medical care or purchase necessaties for their families. Wealth inequality is literally killing people and the trendlines show now sign of improving.</h3>
+      <h3>With approximately <em>64% of workers living paycheck to paycheck<sup><a href='#sources'>1</a></sup></em> this hoarding of wealth is creating an inexcusable stress on workers and the economy. Many workers lack the ability to seek proper medical care or purchase necessaties for their families. Wealth inequality is literally killing people and the trendlines show no sign of improving.</h3>
       </Col>
       </Row>
 
