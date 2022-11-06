@@ -62,9 +62,9 @@ const GetInvolved = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        // headers: {
-        //   'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
-        // },
+        headers: {
+          'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
+        },
         // once login resolved, change credentials
         withCredentials: false,
       }).then((response) => {
