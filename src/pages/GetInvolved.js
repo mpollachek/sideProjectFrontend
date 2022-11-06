@@ -50,7 +50,7 @@ const GetInvolved = () => {
         "Content-Type": "application/json",
         'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z'
       },
-      withCredentials: false,
+      withCredentials: true,
     }).then((response) => {
       setCount(response.data);
       console.log(response.data);
