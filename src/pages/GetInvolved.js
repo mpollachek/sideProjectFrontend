@@ -61,8 +61,6 @@ const GetInvolved = () => {
       await Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
         headers: {
           "Content-Type": "application/json",
-        },
-        headers: {
           'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
         },
         // once login resolved, change credentials
