@@ -50,7 +50,7 @@ const GetInvolved = () => {
         "Content-Type": "application/json",
         // 'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
       },
-      withCredentials: true,
+      withCredentials: false,
     }).then((response) => {
       setCount(response.data);
       console.log(response.data);
@@ -62,10 +62,10 @@ const GetInvolved = () => {
       await Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
         headers: {
           "Content-Type": "application/json",
-          'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
+          // 'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
         },
         // once login resolved, change credentials
-        withCredentials: true,
+        withCredentials: false,
       }).then((response) => {
         setCount(response.data);
         console.log(response.data);
