@@ -25,8 +25,6 @@ import teacher from "../assets/teacher1.jpg";
 import whiteBricks from "../assets/white-bricks.jpg";
 import leaves from "../assets/leaves.jpg";
 
-//need to look at mobile-center blocks and make overflowX hidden
-
 const GetInvolved = () => {
   const u = process.env.cyclicUser;
   const p = process.env.cyclicPword;
@@ -76,9 +74,9 @@ const GetInvolved = () => {
 
   const addEmail = async (values) => {
     await Axios.post(`https://sore-pink-cow-sari.cyclic.app/api/addEmail`, {
-      headers: {
-        Authorization: `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
-      },
+      // headers: {
+      //   Authorization: `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
+      // },
       values,
     }).then((response) => {
       console.log("post: " + JSON.stringify(values));
