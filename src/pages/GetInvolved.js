@@ -63,7 +63,7 @@ const GetInvolved = () => {
           "Content-Type": "application/json",
           // 'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
         },
-        // once login resolved, change credentials
+        // auth header examples - credentials no longer valid
         withCredentials: false,
       }).then((response) => {
         setCount(response.data);
@@ -73,8 +73,10 @@ const GetInvolved = () => {
   });
 
   const addEmail = async (values) => {
+    console.log("submitted values: " + JSON.stringify(values));
     await Axios.post(`https://sore-pink-cow-sari.cyclic.app/api/addEmail`, {
       // headers: {
+      //   "Content-Type": "application/json",
       //   Authorization: `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
       // },
       values,

@@ -42,10 +42,6 @@ const HomePage = () => {
   const [modal, setModal] = useState(false);
     const toggleModal = () => setModal(!modal);
 
-  // useEffect(() => {
-  //   window.scrollTo(0,0);
-  // }, []);
-
   const springDown = {
     init: { y: -500 },
     animate: {y: [-500, 0, -75, 0, -25, 0], times: [null, .7, .8, .9, .95, 1] ,
