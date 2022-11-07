@@ -48,7 +48,7 @@ const GetInvolved = () => {
     Axios.get(`https://sore-pink-cow-sari.cyclic.app/api/getEmails`, {
       headers: {
         "Content-Type": "application/json",
-        'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
+        // 'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
       },
       withCredentials: true,
     }).then((response) => {
