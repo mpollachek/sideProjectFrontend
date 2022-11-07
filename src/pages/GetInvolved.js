@@ -49,6 +49,7 @@ const GetInvolved = () => {
       headers: {
         "Content-Type": "application/json",
         // 'Authorization': `Basic ${Buffer.from(`${u}:${p}`).toString("base64")}`,
+        'Authorization': 'Basic YWxsd29ya2Vyc3VuaW9uOlNpY2t5YnJhaDkhMj8z',
       },
       withCredentials: false,
     }).then((response) => {
