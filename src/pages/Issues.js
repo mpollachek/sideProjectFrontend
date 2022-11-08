@@ -11,8 +11,8 @@ import CBOchart2 from '../assets/wealth_increase_distribution.png'
 import wageGroup from '../assets/EPI_wage_group.png';
 import productivity from '../assets/EPI_productivity.png';
 import leaves from '../assets/leaves.jpg';
-import TreeRings from '../assets/tree-rings.jpg';
-import roof from '../assets/roof.jpg';
+import TreeRings from '../assets/tree-rings_op50.jpg';
+import roof from '../assets/roof_op50.jpg';
 import stars from '../assets/stars.jpg';
 
 const Issues = () => {

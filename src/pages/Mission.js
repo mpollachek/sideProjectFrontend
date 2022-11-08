@@ -12,8 +12,8 @@ import productivity from '../assets/EPI_productivity.png';
 import "./Mission.css";
 import oligarchy from '../assets/definition_oligarchy.png';
 import plutocracy from '../assets/definition_plutocracy.png';
-import hands from '../assets/hands.jpg';
-import lobbying from '../assets/lobbying.png';
+import hands from '../assets/hands_op50.jpg';
+import lobbying from '../assets/lobbying_op50.png';
 
 //list benefits of better pay/less hours
 // -mental health, happiness, 
@@ -29,9 +29,8 @@ const Mission = () => {
       >
     <Row>
       <Col className='text-center offset-1 col-10 mt-3' 
-      style={{
-        color: 'rgb(0,0,0',      
-        textShadow: '0 0 3px #ffffff, 0 0 5px #ffffff'}}
+      style={{     
+        textShadow: '0 0 3px #000000, 0 0 5px #000000'}}
       >
         <h1>Our Mission is to Improve the Lives of Workers</h1>
         <h2>We will break the Barriers of Division Created by Politicians and the Media, Unite Workers and Demand Change</h2>
@@ -71,14 +70,13 @@ const Mission = () => {
     </Row>
 
     <Row>
-      <Col className='text-center offset-1 col-10 mt-3' 
+      <Col className='text-center offset-1 col-10 my-3' 
       style={{
-        color: 'rgb(0,0,0', 
-        textShadow: '0 0 3px #ffffff, 0 0 5px #ffffff'
+        textShadow: '0 0 3px #000000, 0 0 5px #000000',
       }}
       >
-        <h3>Our purchasing power decreases each year and they tell us to budget better</h3>
-        <h4>Their bank accounts fatten each year and it's time we tell them to buy fewer yachts and private jets</h4>
+        <h2>Our purchasing power decreases each year and they tell us to budget better</h2>
+        <h3>Their bank accounts fatten each year and it's time we tell them to buy fewer yachts and private jets</h3>
       </Col>
     </Row>
     </Row>
@@ -92,12 +90,12 @@ const Mission = () => {
     <Row className='text-center'>
       <Col className='offset-lg-1 col-lg-5 my-3'>
         <img src={oligarchy} alt="definition of oligarchy" className='definition'
-        style={{opacity: 0.8}}
+        style={{opacity: 0.85}}
         />
       </Col>
       <Col className='col-lg-5 my-3'>
         <img src={plutocracy} alt="definition of plutocracy" className='definition'
-        style={{opacity: 0.8}}
+        style={{opacity: 0.85}}
         />
       </Col>
     </Row>

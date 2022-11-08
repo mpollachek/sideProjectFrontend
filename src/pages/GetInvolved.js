@@ -18,7 +18,7 @@ import Axios from "axios";
 //import { u, p } from '../config';
 //testing
 import { Buffer } from "buffer";
-import construction from "../assets/construction1.jpg";
+import construction from "../assets/construction1_op50.jpg";
 import metalCutting from "../assets/metal-cutting.jpg";
 import firefighter from "../assets/firefighter2.jpg";
 import teacher from "../assets/teacher1.jpg";

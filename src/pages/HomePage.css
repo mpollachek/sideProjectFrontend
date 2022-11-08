@@ -40,13 +40,13 @@
 
 .banner1 {
   outline: 3px solid black;
-  background-color: yellow;
+  background-color: rgb(211, 158, 34);
   color: #000;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .banner2 {

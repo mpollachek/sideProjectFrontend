@@ -25,7 +25,7 @@ import profits from '../assets/profits_vs_labor_costs_EPI.png';
 import { motion, } from 'framer-motion';
 import leaves from '../assets/leaves.jpg';
 import flagBricks from '../assets/flag-bricks.jpg';
-import welderFlag from '../assets/welder-flag.jpg';
+import welderFlag from '../assets/welder-flag_op50.jpg';
 import waterLily from '../assets/water-lily.png';
 
 const HomePage = () => {
