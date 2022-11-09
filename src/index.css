@@ -8,6 +8,7 @@ body {
   color: white;
   background-color: rgb(16, 1, 33);
   overflow-x: hidden;
+  z-index: 0;
 }
 
 code {

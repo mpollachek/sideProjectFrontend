@@ -9,7 +9,7 @@ import GetInvolved from './pages/GetInvolved';
 import Donate from './pages/Donate';
 import Faq from './pages/Faq';
 import Test from './pages/Test';
-import Issues from './pages/Issues';
+import Issues from './pages/IssuesWealth';
 
 
 function App() {

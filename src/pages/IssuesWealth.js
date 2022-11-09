@@ -15,6 +15,8 @@ import TreeRings from '../assets/tree-rings_op50.jpg';
 import roof from '../assets/roof_op50.jpg';
 import stars from '../assets/stars.jpg';
 
+// make issues to solve a dropdown with separate routes for wealth, paid time off, govt bribes/corruption/lobbying
+
 const Issues = () => {
 
   return(

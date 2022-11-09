@@ -66,8 +66,8 @@ const HomePage = () => {
   };
   const pullAway = {
     init: { scale: 0, opacity: 0 },
-    animate: { scale: [0, 10, .4, 1], times: [null, .01, .7, 1 ],
-    opacity: 1, transition: { delay: 1.25, duration: 2 }}
+    animate: { scale: [0, 10, 8, .4, 1], times: [0, .1, .2, .7, 1 ],
+    opacity: [0, 0, 1, 1, 1], transition: { delay: 1, duration: 2 }}
   };
   
   return(
@@ -378,6 +378,7 @@ const HomePage = () => {
         <img src={profits} alt="Normal and recent growth in unit prices" 
         className='img-fluid'
         />
+        <br/>
         <a href='https://www.epi.org/blog/corporate-profits-have-contributed-disproportionately-to-inflation-how-should-policymakers-respond/' >Source: Economic Policy Institute</a>
         </motion.div>
         </motion.div>        
@@ -408,7 +409,7 @@ const HomePage = () => {
         <Col>
       <motion.div
         whileInView={{ scale: [0, 0, 1.5, 1], times: [null, 0.01, .7, 1 ], opacity: [0, 0, .7, 1]}}
-        transition={{ delay: 1.5, duration: 2}}
+        transition={{ delay: 1, duration: 1.75}}
         viewport={{ once: true }}
         >        
       

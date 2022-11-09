@@ -19,11 +19,43 @@
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
 
-
-
 .brand {
     width: 100%;
     height: 100%;
     max-width: 6em;
     
+}
+
+.bgDrop {
+  background-color: #464040;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+      height: auto !important;
+  }
+}
+
+@media (min-width: 768px)  {
+  .translatePop {
+    transform: translateY(8px);
+  }
+}
+
+/* @media (min-width: 768px)  {
+  .popover-inner {
+    transform: translateX(200px);
+  }
+} */
+
+.tooltip-arrow {
+  display: none !important;
+}
+
+.hand:hover {
+  cursor: pointer;
+}
+
+.arrow {
+  visibility: hidden;
 }
