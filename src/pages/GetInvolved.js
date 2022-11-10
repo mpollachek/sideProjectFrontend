@@ -88,7 +88,7 @@ const GetInvolved = () => {
 
   return (
     <Container className="full-width">
-      <Row       
+      <Row
         style={{
           backgroundImage: `url(${firefighter})`,
           backgroundSize: "cover",
@@ -183,8 +183,9 @@ const GetInvolved = () => {
           </Col>
         </Row>
         <Row className="my-4">
-          <Col className="my-3 text-center"
-          style={{textShadow: '0 0 2px #000, 0 0 5px #000'}}
+          <Col
+            className="my-3 text-center"
+            style={{ textShadow: "0 0 2px #000, 0 0 5px #000" }}
           >
             <h2>
               If you believe there is more purpose in life than making
@@ -192,16 +193,21 @@ const GetInvolved = () => {
             </h2>
             <h1>Join Our Movement!</h1>
             <h3>
-              We will have strike meetup locations in major cities and, for those able to make it, we will march in Washington DC - We will make our voices heard!
+              We will have strike meetup locations in major cities and, for
+              those able to make it, we will march in Washington DC - We will
+              make our voices heard!
             </h3>
-
           </Col>
         </Row>
       </Row>
       {/* End Pledge Banner */}
 
-      <Row className="text-center"
-      style={{backgroundImage: `url(${whiteBricks})`, backgroundSize: "cover"}}
+      <Row
+        className="text-center"
+        style={{
+          backgroundImage: `url(${whiteBricks})`,
+          backgroundSize: "cover",
+        }}
       >
         <Col>
           <img
@@ -213,12 +219,13 @@ const GetInvolved = () => {
           />
         </Col>
       </Row>
-      
-      <Row className="text-center blshadow"
-      style={{
-        backgroundImage: `url(${construction})`,
-        backgroundSize: "cover"
-      }}
+
+      <Row
+        className="text-center blshadow"
+        style={{
+          backgroundImage: `url(${construction})`,
+          backgroundSize: "cover",
+        }}
       >
         <Col className="col-12">
           <h1>Across the USA workers are Unionizing</h1>
@@ -284,67 +291,75 @@ const GetInvolved = () => {
             thing we can be sure of, it's billionaires' greed.
           </h3>
         </Col>
-      
 
-      <Row className="bannerlred text-center offset-1 col-10 mt-2 mb-5">
-        <h3 className="my-2">Not in the USA but wish to join our movement?</h3>
-        <h3 className="mb-3">
-          We believe that extending this movement worldwide is inevitable. You
-          are welcome to strike with us and together we will pressure
-          governments and multinational corporations to treat us not as numbers,
-          but as humans
-        </h3>
-        <h3 className="mb-2">
-          We appreciate your support and welcome all workers looking to improve
-          the lives of themselves, their families, friends and fellow countrymen
-        </h3>
-      </Row>
+        <Row className="bannerlred text-center offset-1 col-10 mt-2 mb-5">
+          <h3 className="my-2">
+            Not in the USA but wish to join our movement?
+          </h3>
+          <h3 className="mb-3">
+            We believe that extending this movement worldwide is inevitable. You
+            are welcome to strike with us and together we will pressure
+            governments and multinational corporations to treat us not as
+            numbers, but as humans
+          </h3>
+          <h3 className="mb-2">
+            We appreciate your support and welcome all workers looking to
+            improve the lives of themselves, their families, friends and fellow
+            countrymen
+          </h3>
+        </Row>
       </Row>
 
-      <Row id="sources"
-      style={{
-        backgroundImage: `url(${leaves})`,
-        backgroundSize: 'cover',
-        overflowWrap: 'break-word',
-        color: 'rgb(255, 255, 255)'
-            }}
+      <Row
+        id="sources"
+        style={{
+          backgroundImage: `url(${leaves})`,
+          backgroundSize: "cover",
+          overflowWrap: "break-word",
+          color: "rgb(255, 255, 255)",
+        }}
       >
-        <Col className="offset-1 col-10 my-5 bgdark"
-        >
-          <p>            
-              <sup>1</sup>Nguyen, J. (2022, April 12). Companies like Amazon
-              spend millions on anti-union efforts. where's that money
-              going?&nbsp;. Marketplace. Retrieved November 2, 2022, from
-              <a href="https://www.citationmachine.net/bibliographies/38d08ec9-bdb0-415c-a979-b670a603df0b"> https://www.marketplace.org/2022/04/12/companies-like-amazon-spend-millions-on-anti-union-efforts-wheres-that-money-going/{" "}
-            </a>
-          </p>
-
-          <p>            
-              <sup>2</sup>Abramson, A. (2020, June 18). Why the trillion-dollar
-              bailout benefited the rich. Time. Retrieved November 2, 2022, from
-              <a href="https://time.com/5845116/coronavirus-bailout-rich-richer/"> https://time.com/5845116/coronavirus-bailout-rich-richer/{" "}
+        <Col className="offset-1 col-10 my-5 bgdark">
+          <p>
+            <sup>1</sup>Nguyen, J. (2022, April 12). Companies like Amazon spend
+            millions on anti-union efforts. where's that money going?&nbsp;.
+            Marketplace. Retrieved November 2, 2022, from
+            <a href="https://www.citationmachine.net/bibliographies/38d08ec9-bdb0-415c-a979-b670a603df0b">
+              {" "}
+              https://www.marketplace.org/2022/04/12/companies-like-amazon-spend-millions-on-anti-union-efforts-wheres-that-money-going/{" "}
             </a>
           </p>
 
           <p>
-              <sup>3</sup>CBS Interactive. (2022, January 22). Most of the $800
-              billion in PPP loans did not go to workers, new study finds. CBS
-              News. Retrieved November 2, 2022, from <a href="https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/">
-               https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/{" "}
+            <sup>2</sup>Abramson, A. (2020, June 18). Why the trillion-dollar
+            bailout benefited the rich. Time. Retrieved November 2, 2022, from
+            <a href="https://time.com/5845116/coronavirus-bailout-rich-richer/">
+              {" "}
+              https://time.com/5845116/coronavirus-bailout-rich-richer/{" "}
             </a>
           </p>
 
-          <p>            
-              <sup>4</sup>Gillespie, N. (2021, March 6). 5 ways Elon Musk and
-              other billionaires get welfare for the rich. Reason.com. Retrieved
-              November 2, 2022, from <a href="https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/">
-               https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/{" "}
+          <p>
+            <sup>3</sup>CBS Interactive. (2022, January 22). Most of the $800
+            billion in PPP loans did not go to workers, new study finds. CBS
+            News. Retrieved November 2, 2022, from{" "}
+            <a href="https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/">
+              https://www.cbsnews.com/dfw/news/ppp-loans-workers-new-study/{" "}
             </a>
           </p>
 
-          <p>            
-              <sup>5</sup><a href="https://goodjobsfirst.org/">https://goodjobsfirst.org/{" "}
+          <p>
+            <sup>4</sup>Gillespie, N. (2021, March 6). 5 ways Elon Musk and
+            other billionaires get welfare for the rich. Reason.com. Retrieved
+            November 2, 2022, from{" "}
+            <a href="https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/">
+              https://reason.com/2021/03/05/5-ways-elon-musk-and-other-billionaires-get-welfare-for-the-rich/{" "}
             </a>
+          </p>
+
+          <p>
+            <sup>5</sup>
+            <a href="https://goodjobsfirst.org/">https://goodjobsfirst.org/ </a>
           </p>
         </Col>
       </Row>
