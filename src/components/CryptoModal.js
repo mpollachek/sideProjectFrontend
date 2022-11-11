@@ -35,11 +35,9 @@ const CryptoModal = (wallet) => {
   
   const copyAlert = (wallet) => {
     navigator.clipboard.writeText(wallet);
-    alert(`${wallet} was copied to your clipboard`)
+    alert(`${wallet} has been copied to your clipboard`)
   }
 
-
-  //Make first modal show wallet addresses and nested modal is form
   return (
     <div style={{ color: "rgb(0,0,0)" }}>
           <Row>
@@ -56,19 +54,65 @@ const CryptoModal = (wallet) => {
               <h4>Please send funds to the following wallet addresses:</h4>
               <h5>
                 Click to copy address <br/>
-                Bitcoin: <button onClick={() => copyAlert('1KkDmRxa8W6e8W1jDkuwauJxmTkt19z2k6')}>1KkDmRxa8W6e8W1jDkuwauJxmTkt19z2k6</button><br/>
-                ETH (ERC20): <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
-                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button><br/>
-                BNB (BEP20): <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')}>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button><br/>
-                SOL: <button onClick={() =>  copyAlert('24mgBhnf411Phwhk9PH2un3Scmv8i9G8B9PitL6Bwwoh')}>24mgBhnf411Phwhk9PH2un3Scmv8i9G8B9PitL6Bwwoh</button><br/>
-                USDT (ERC20): <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')}>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button><br/>
-                USDC (ERC20): <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')}>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button><br/>
-                DOGE: <button onClick={() =>  copyAlert('DPMqbcGgBMnupUokDGULSpYgUoB4erznqe')}>DPMqbcGgBMnupUokDGULSpYgUoB4erznqe</button><br/>
-                AVAX: <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')}>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button><br/>
-                MATIC: <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')}>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button><br/>
-                LTC: <button onClick={() =>  copyAlert('LMokCdGtYX7ruXbcTT2LGjHqZQkFSQdcnY')}>LMokCdGtYX7ruXbcTT2LGjHqZQkFSQdcnY</button><br/> 
-              </h5>   
+              </h5>
             </Col>
+            </Row>
+            <Row>
+              <Col md="2">Bitcoin:</Col>
+              <Col md="10">
+              <button onClick={() => copyAlert('1KkDmRxa8W6e8W1jDkuwauJxmTkt19z2k6')}>1KkDmRxa8W6e8W1jDkuwauJxmTkt19z2k6</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">ETH (ERC20):</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
+                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">BNB (BEP20):</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
+                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">SOL:</Col>
+              <Col md="10">
+              <button onClick={() =>  copyAlert('24mgBhnf411Phwhk9PH2un3Scmv8i9G8B9PitL6Bwwoh')}>24mgBhnf411Phwhk9PH2un3Scmv8i9G8B9PitL6Bwwoh</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">USDT (ERC20):</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
+                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">USDC (ERC20):</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
+                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">DOGE:</Col>
+              <Col md="10">
+              <button onClick={() =>  copyAlert('DPMqbcGgBMnupUokDGULSpYgUoB4erznqe')}>DPMqbcGgBMnupUokDGULSpYgUoB4erznqe</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">AVAX:</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
+                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">MATIC:</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('0x5c9c9310e181c0776d2cba71a07173549cd24b1d')
+                }>0x5c9c9310e181c0776d2cba71a07173549cd24b1d</button>
+              </Col>
+              <br/><br/>
+              <Col md="2">LTC:</Col>
+              <Col md="10"> 
+              <button onClick={() =>  copyAlert('LMokCdGtYX7ruXbcTT2LGjHqZQkFSQdcnY')}>LMokCdGtYX7ruXbcTT2LGjHqZQkFSQdcnY</button>
+              </Col>       
           </Row>
 
       <Modal
@@ -97,17 +141,13 @@ const CryptoModal = (wallet) => {
         //validate={validateContactForm}
       >
         <Form>
-          <FormGroup row>
-            <Label htmlFor="firstName" md="6">
+        <FormGroup row>
+        <Col md="6">
+            <Label htmlFor="firstName">
               First Name
             </Label>
-            <Label htmlFor="lastName" md="6">
-              Last Name
-            </Label>
-          </FormGroup>
-          <FormGroup row>
-            <Col md="6">
-              <Field
+            <br/>
+            <Field
                 className="form-control"
                 name="firstName"
                 placeholder="First Name"
@@ -115,9 +155,13 @@ const CryptoModal = (wallet) => {
               <ErrorMessage name="firstName">
                 {(msg) => <p className="text-danger">{msg}</p>}
               </ErrorMessage>
-            </Col>
-            <Col md="6">
-              <Field
+          </Col>
+          <Col md="6">
+            <Label htmlFor="lastName">
+              Last Name
+            </Label>
+            <br/>
+            <Field
                 className="form-control"
                 name="lastName"
                 placeholder="Last Name"
@@ -125,20 +169,15 @@ const CryptoModal = (wallet) => {
               <ErrorMessage name="lastName">
                 {(msg) => <p className="text-danger">{msg}</p>}
               </ErrorMessage>
-            </Col>
+              </Col>
           </FormGroup>
 
           <FormGroup row>
-            <Label htmlFor="address" md="6">
+          <Col md="6">
+            <Label htmlFor="address">
               Address
             </Label>
-            <Label htmlFor="city" md="6">
-              City
-            </Label>
-          </FormGroup>
-          <FormGroup row>
-            <Col md="6">
-              <Field
+            <Field
                 className="form-control"
                 name="address"
                 placeholder="Address"
@@ -148,7 +187,10 @@ const CryptoModal = (wallet) => {
               </ErrorMessage>
             </Col>
             <Col md="6">
-              <Field
+            <Label htmlFor="city" md="6">
+              City
+            </Label>
+            <Field
                 className="form-control"
                 name="city"
                 placeholder="City"
@@ -158,21 +200,13 @@ const CryptoModal = (wallet) => {
               </ErrorMessage>
             </Col>
           </FormGroup>
-
+          
           <FormGroup row>
+          <Col md="4">
             <Label htmlFor="state" md="4">
               State
             </Label>
-            <Label htmlFor="zipcode" md="4">
-              Zip Code
-            </Label>
-            <Label htmlFor="country" md="4">
-              Country
-            </Label>
-          </FormGroup>
-          <FormGroup row>
-            <Col md="4">
-              <Field
+            <Field
                 className="form-control"
                 name="state"
                 placeholder="State"
@@ -182,7 +216,10 @@ const CryptoModal = (wallet) => {
               </ErrorMessage>
             </Col>
             <Col md="4">
-              <Field
+            <Label htmlFor="zipcode" md="4">
+              Zip Code
+            </Label>
+            <Field
                 className="form-control"
                 name="zipcode"
                 placeholder="Zip Code"
@@ -192,7 +229,10 @@ const CryptoModal = (wallet) => {
               </ErrorMessage>
             </Col>
             <Col md="4">
-              <Field
+            <Label htmlFor="country" md="4">
+              Country
+            </Label>
+            <Field
                 className="form-control"
                 name="country"
                 placeholder="Country"
@@ -201,19 +241,14 @@ const CryptoModal = (wallet) => {
                 {(msg) => <p className="text-danger">{msg}</p>}
               </ErrorMessage>
             </Col>
-          </FormGroup>
+          </FormGroup>          
 
           <FormGroup row>
+          <Col md="6">
             <Label htmlFor="employer" md="6">
               Employer
             </Label>
-            <Label htmlFor="occupation" md="6">
-              Occupation
-            </Label>
-          </FormGroup>
-          <FormGroup row>
-            <Col md="6">
-              <Field
+            <Field
                 className="form-control"
                 name="employer"
                 placeholder="employer"
@@ -223,7 +258,10 @@ const CryptoModal = (wallet) => {
               </ErrorMessage>
             </Col>
             <Col md="6">
-              <Field
+            <Label htmlFor="occupation" md="6">
+              Occupation
+            </Label>
+            <Field
                 className="form-control"
                 name="occupation"
                 placeholder="occupation"
@@ -233,6 +271,7 @@ const CryptoModal = (wallet) => {
               </ErrorMessage>
             </Col>
           </FormGroup>
+         
           <FormGroup row className="justify-content-end">
             <Col md={{ size: 3 }}>
               <Button type="submit" color="primary">

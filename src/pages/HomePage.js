@@ -137,9 +137,9 @@ const HomePage = () => {
                 transition={{ delay: 1, duration: 5 }}
                 viewport={{ once: true }}
               >
-                <h1
+                <h2
                   style={{
-                    fontSize: "72px",
+                    fontSize: "60px",
                   }}
                   className="display-4 imageTextProps1"
                 >
@@ -147,7 +147,7 @@ const HomePage = () => {
                   <span className="imageTextProps2">
                     <b>We Are Not Right</b>
                   </span>
-                </h1>
+                </h2>
               </motion.div>
             </Col>
           </Row>
