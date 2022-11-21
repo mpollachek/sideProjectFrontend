@@ -93,9 +93,20 @@ const Faq = () => {
               </AccordionItem>
               <AccordionItem>
                 <AccordionHeader targetId="2">
-                  Do you support (name of) politician or political party?
+                  What is your position on the environment, abortion or other topics prevalent in today's political discourse?
                 </AccordionHeader>
                 <AccordionBody accordionId="2">
+                  <strong>
+                    These topics are finely tuned to divide the populace on sensitive issues. Our focus is to unite workers across the USA and improve their compensation, work/life balance and treatment. To accomplish this task, we do not wish to alienate workers who have differing political and social positions on these matters.
+                  </strong>
+                  {"\n\n"}Our members have a wide range of beliefs regarding current hot-button issues, and that is OK. The All Workers Union takes no stance on topics not related to improving laws and government for the benefit of workers. The media and politicians bombard us daily with examples of extreme instances to enrage the population. These issues all share one commonality: no matter what decisions are made, they will not affect the wealthy or improve the lives of workers. As long as the people are clashing over these topics, politicians are free to pass legislation to benefit billionaires and corporations at the expense of workers.
+                </AccordionBody>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionHeader targetId="3">
+                  Do you support (name of) politician or political party?
+                </AccordionHeader>
+                <AccordionBody accordionId="3">
                   <strong>
                     No. The majority of politicians are oligarch puppets whose
                     primary goal is to keep us divided so that they can continue
@@ -111,11 +122,11 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="3">
+                <AccordionHeader targetId="4">
                   How can I ally myself with people who support (group or
                   political party) when they did (XYZ)?
                 </AccordionHeader>
-                <AccordionBody accordionId="3">
+                <AccordionBody accordionId="4">
                   <strong>
                     While there are bad people in this nation, such as racists
                     or those who cause destruction during protests, the vast
@@ -135,11 +146,11 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="4">
+                <AccordionHeader targetId="5">
                   Aren't the (name of political party) good since they almost
                   passed (XYZ law) to help workers?
                 </AccordionHeader>
-                <AccordionBody accordionId="4">
+                <AccordionBody accordionId="5">
                   <strong>
                     Laws that will help the general public with better wages or
                     increased quality of life inevitably fail by just a few
@@ -158,10 +169,10 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="5">
+                <AccordionHeader targetId="6">
                   Is the All Workers Union movement class warfare?
                 </AccordionHeader>
-                <AccordionBody accordionId="5">
+                <AccordionBody accordionId="6">
                   <strong>
                     For decades, the wealthy have been fighting a class war and
                     workers are losing.
@@ -197,11 +208,11 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="6">
+                <AccordionHeader targetId="7">
                   If you don't like your job or are underpaid why don't you just
                   get another job?
                 </AccordionHeader>
-                <AccordionBody accordionId="6">
+                <AccordionBody accordionId="7">
                   <strong>
                     Monopolized industries and seemingly coordinated wage
                     suppression have made this unfeasible for the majority of
@@ -219,11 +230,11 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="7">
+                <AccordionHeader targetId="8">
                   Why should I join the AWU? I'm proud of working 60 hours each
                   week!
                 </AccordionHeader>
-                <AccordionBody accordionId="7">
+                <AccordionBody accordionId="8">
                   <strong>
                     Workers have been oppressed and exploited for so long that
                     many of us have developed a form of Stockholm Syndrome for
@@ -239,10 +250,10 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="8">
+                <AccordionHeader targetId="9">
                   I'm afraid of losing my job, what should I do?
                 </AccordionHeader>
-                <AccordionBody accordionId="8">
+                <AccordionBody accordionId="9">
                   <strong>
                     Corporations instill fear in us to keep us complacent. They
                     want us to believe that if we stand up to them we will be
@@ -254,11 +265,11 @@ const Faq = () => {
                 </AccordionBody>
               </AccordionItem>
               <AccordionItem>
-                <AccordionHeader targetId="9">
+                <AccordionHeader targetId="10">
                   The idea that media and politicians are trying to divide us
                   sounds like a conspiracy theory. Have you any proof?
                 </AccordionHeader>
-                <AccordionBody accordionId="9">
+                <AccordionBody accordionId="10">
                   <strong>
                     The proof is basically screaming in your face each and every
                     day if you watch the news or listen to a politician.

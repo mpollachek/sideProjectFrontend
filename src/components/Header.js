@@ -31,16 +31,15 @@ import ReportIcon from "@mui/icons-material/Report";
 const Header = () => {
   //navbar open state
   const [menuOpen, setMenuOpen] = useState(false);
-  // Popover open state
-  const [popoverOpen, setPopoverOpen] = useState(false);
 
-  const closeBoth = () => {
-    setMenuOpen(!menuOpen);
-    setPopoverOpen(!popoverOpen);
-  };
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar dark sticky="top" expand="md">
+    <Navbar dark sticky="top" expand="md"
+    style={{overflow: 'visible'}}
+    >
       <NavbarBrand className="ms-5" href="/">
         <img
           src={AWUlogo}
@@ -58,42 +57,31 @@ const Header = () => {
             </NavLink>
           </NavItem>
 
-          {/* <NavItem className='navfont translatePop' id="dropdownPopover" onClick={() => setPopoverOpen(!popoverOpen)}>
-                <div className='hand' >
-              <ReportIcon className='navicons'/>
-              Issues to Solve
-              </div>
-                <UncontrolledPopover
-                  placement="bottom"
-                  target="dropdownPopover"
-                  trigger="legacy"
-                  isOpen={popoverOpen}
-                  >                    
-                    <PopoverBody className='bgDrop navfont' >
-                <NavLink 
-                onClick={() => closeBoth} 
-                className='nav-link' 
-                to='/'
-                >
-                  balls
-                  </NavLink >
-                  <NavLink 
-                onClick={() => closeBoth} 
-                className='nav-link' 
-                to='/'
-                >
-                  balls
-                  </NavLink >
-                  <NavLink 
-                onClick={() => closeBoth} 
-                className='nav-link' 
-                to='/'
-                >
-                  balls
-                  </NavLink >
-                </PopoverBody>
-                </UncontrolledPopover>
-            </NavItem> */}
+          {/* <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret className="navfont">
+              <ReportIcon className="navicons" />
+                Issues to Solve
+              </DropdownToggle>
+              <DropdownMenu right 
+              style={{position: 'fixed'}}
+              >
+                <DropdownItem onClick={() => setMenuOpen(!menuOpen)}>
+                <NavLink className="nav-link navfont" to="/Issues">
+                Compensation
+                </NavLink>
+                </DropdownItem>
+                <DropdownItem onClick={() => setMenuOpen(!menuOpen)}>
+                <NavLink className="nav-link navfont" to="/Issues">
+                  Paid Time Off
+                  </NavLink>
+                  </DropdownItem>
+                <DropdownItem onClick={() => setMenuOpen(!menuOpen)}>
+                <NavLink className="nav-link navfont" to="/Issues">
+                  Corruption
+                  </NavLink>
+                  </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown> */}
 
           <NavItem onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink className="nav-link navfont" to="/Issues">

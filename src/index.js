@@ -7,7 +7,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from './components/ScrollToTop';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -43,7 +43,7 @@ const Donate = () => {
             </h2>
             <h2>
               Donations will be used for outreach, organizing events, spreading
-              our message and operations costs
+              our message and operations costs. Our first goal is to gather 1 million workers for a 1 day strike to jumpstart this movement.
             </h2>
             <h2>
               Most importantly, all funds will be used to achieve our goal of

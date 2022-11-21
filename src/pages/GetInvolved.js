@@ -97,19 +97,19 @@ const GetInvolved = () => {
       >
         <Col className="text-center my-4 blshadow">
           <h2>
-            Together, We will Create a Labor Strike that Will Force Corporations
-            and the Government to Improve our Working Conditions and
-            Compensation
+            Together, we will create a labor strike that will force corporations
+            and the government to improve our working conditions and
+            compensation
           </h2>
           <h2>
             <em>
-              Please <b>Spread the Word</b> about the All Workers Union!
+              Please <b>spread the word</b> about the All Workers Union!
             </em>
           </h2>
           <h4>
-            Whether you Wish to Improve Working Conditions for yourself, your
-            Friends, your Family or you Simply Want your Fellow Countrymen to
-            have an Improved Quality of Life, Please Join our Movement.
+            Whether you wish to improve working conditions for yourself, your
+            friends, your family or you simply want your fellow countrymen to
+            have an improved quality of life, please join our movement.
           </h4>
         </Col>
 
@@ -117,15 +117,15 @@ const GetInvolved = () => {
         <Row>
           <Col className="banner1 text-center offset-1 col-10">
             <h3 className="my-2">
-              Our Goal is to have 1 Million Workers Pledged to Strike
+              Our goal is to have 1 million workers pledged to strike
             </h3>
             <h3 className="mb-2">
-              Enter Your Email Address below to pledge to be part of the All
-              Workers Union Strike
+              Enter your email address below to pledge to be part of the All
+              Workers Union strike
             </h3>
             <h3 className="mb-2">
-              Your Information is Safe and Private, You will be sent
-              Notification when the Strike Date is Officially Planned
+              Your information is safe and private; you will be sent
+              notification when the strike date is officially planned
             </h3>
             <Formik
               initialValues={{
@@ -179,7 +179,7 @@ const GetInvolved = () => {
                 </FormGroup>
               </Form>
             </Formik>
-            <h1 className="mt-2">{count} Workers have Pledged to Strike</h1>
+            <h1 className="mt-2">{count} Workers have pledged to strike</h1>
           </Col>
         </Row>
         <Row className="my-4">
@@ -228,7 +228,7 @@ const GetInvolved = () => {
         }}
       >
         <Col className="col-12">
-          <h1>Across the USA workers are Unionizing</h1>
+          <h1>Across the USA workers are unionizing</h1>
         </Col>
         <Col className="bggrn offset-1 col-10 col-lg-5 my-3">
           <h4 className="my-3">
@@ -277,7 +277,7 @@ const GetInvolved = () => {
           </h4>
         </Col>
         <Col className="col-12">
-          <h1>Our Power is in our Numbers</h1>
+          <h1>Our power is in our numbers</h1>
           <h2>
             Our first strike will be one day in length and one million strong to
             start negotiations and help spread the word

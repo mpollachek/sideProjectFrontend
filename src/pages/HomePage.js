@@ -74,7 +74,7 @@ const HomePage = () => {
   const pullAway = {
     init: { scale: 0, opacity: 0 },
     animate: {
-      scale: [0, 10, 8, 0.4, 1],
+      scale: [1, 10, 8.4, 0.4, 1],
       times: [0, 0.1, 0.2, 0.7, 1],
       opacity: [0, 0, 1, 1, 1],
       transition: { delay: 1, duration: 2 },
@@ -620,12 +620,12 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-center justify-content-center mt-3">
-                The Problem is not that there are not Enough Resources to
-                Provide Workers with Decent Wages
+                The Problem is not that there are not enough resources to
+                provide workers with decent wages
               </h2>
               <h2 className="text-center justify-content-center my-3">
-                The Problem is that there are not Enough Resources to Satisfy
-                Executives and Shareholders
+                The problem is that there are not enough resources to satisfy
+                executives and shareholders
               </h2>
             </motion.div>
           </Col>
@@ -639,7 +639,7 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <p>
-                Throughout the Industrial revolution our ancestors fought to end
+                Throughout the industrial revolution our ancestors fought to end
                 child labor, implement the 8 hour work day and negotiate for
                 better pay. Strike-breaking tactics resulted in the deaths of
                 workers, but still they fought on to ensure better lives for

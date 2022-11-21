@@ -28,10 +28,9 @@ const Mission = () => {
               textShadow: "0 0 3px #000000, 0 0 5px #000000",
             }}
           >
-            <h1>Our Mission is to Improve the Lives of Workers</h1>
+            <h1>Our mission is to improve the lives of workers</h1>
             <h2>
-              We will break the Barriers of Division Created by Politicians and
-              the Media, Unite Workers and Demand Change
+              We will break the barriers of division created by politicians and the media, unite workers and demand change
             </h2>
             <h2>
               The United States must eliminate wealth as the driving mechanism
@@ -48,8 +47,7 @@ const Mission = () => {
               <li>Reduce number of hours worked per week</li>
               <li>Create a workers bill of rights</li>
               <li>
-                Remove the ability for corporations and the wealthy to own
-                politicians
+                Remove the ability for corporations and the wealthy to purchase policy
               </li>
               <li>Decrease corruption - increase transparency</li>
               <li>
