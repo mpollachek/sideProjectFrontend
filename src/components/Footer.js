@@ -50,12 +50,12 @@ const Footer = () => {
                   FAQ
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/Donate" className="footericons">
                   <LocalAtmIcon />
                   Donate
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </Col>
           <Col xs="5" className="text-center my-4">

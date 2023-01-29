@@ -49,7 +49,7 @@ const Header = () => {
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
-        <Nav className="ms-auto" navbar>
+        <Nav className="ms-auto me-3" navbar >
           <NavItem onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink className="nav-link navfont" to="/">
               <HomeRoundedIcon className="navicons" />
@@ -115,12 +115,12 @@ const Header = () => {
               FAQ
             </NavLink>
           </NavItem>
-          <NavItem onClick={() => setMenuOpen(!menuOpen)}>
+          {/* <NavItem onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink className="nav-link navfont" to="/Donate">
               <LocalAtmIcon className="navicons" />
               Donate
             </NavLink>
-          </NavItem>
+          </NavItem> */}
         </Nav>
       </Collapse>
     </Navbar>

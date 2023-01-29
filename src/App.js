@@ -24,7 +24,7 @@ function App() {
         <Route path='/faq' element={<Faq />} />
         <Route path='/issues' element={<Issues />} />
         {/* <Route path='/store' element={<Store />} /> */}
-        <Route path='/Donate' element={<Donate />} />
+        {/* <Route path='/Donate' element={<Donate />} /> */}
         <Route path='/Test' element={<Test />} />
       </Routes>
       <Footer/>
